@@ -1,0 +1,673 @@
+/* TODO: Define your styles here to match the design you have selected. */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hire-me {
+    background-color: #ff6450;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.intro-section {
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-section-container {
+    width: 30rem;
+}
+
+.btn {
+    background-color: #ff6450;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.about-heading {
+    text-align: center;
+}
+
+.about-heading h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-text {
+    flex-basis: 50%;
+    display: grid;
+}
+
+.about-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-text p {
+    margin-bottom: 1em;
+}
+
+.about-text .contact-me {
+    background-color: #ff6450;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.about-image {
+    flex-basis: 50%;
+    text-align: center; /* Adjust as needed */
+}
+
+.about-image img {
+    width: 64rem;
+    height: 81rem;
+    /* width: 95%; */
+    border-radius: 10px 10px 10px 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-template-rows: auto; /* Rows size will be determined by content */
+    gap: 20px; /* Adjust the gap between columns as needed */
+    margin-bottom: 20px; /* Space before the button */
+}
+
+.about-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    grid-column: 1 / -1; /* h3 will span both columns */
+}
+
+.about-text p {
+    margin-bottom: 1em;
+    /* No need to specify grid-column here unless you want to change the spanning of specific paragraphs */
+}
+
+.about-text .contact-me {
+    grid-column: 1 / -1; /* Button will span both columns */
+    justify-self: center; /* Aligns the button to the center */
+    background-color: #ff6450;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 200px; /* Optional: if you want to limit the width of the button */
+}
+
+
+
+/* Services Section Styles */
+.services-section {
+    background-color: #f9f9f9; /* Light background for the section */
+    padding: 50px 0;
+}
+
+.services-heading {
+    text-align: center;
+}
+
+.services-heading h2,
+.testimonials-heading h2,
+.portfolio-heading h2,
+.experience-heading h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.service-card img {
+    margin-bottom: 15px;
+    width: 22%;
+}
+
+.service-card p {
+    text-align: center;
+    width: 80%;
+}
+
+/* Work Experience Section Styles */
+.experience-section {
+    padding: 50px 0;
+    background-color: #fefafa;
+    background-image: url(img/work-experience-bg-img.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.progress-wrapper {
+    background-color: #eee; /* Light grey background */
+    border-radius: 10px; /* Rounded corners for the progress bar background */
+    overflow: hidden; /* Ensures inner bar doesn't break the rounded corners */
+    width: 100%; /* Full width of the parent container */
+    height: 20px; /* Adjust to your preference */
+}
+
+.progress-bar {
+    background-color: #ff6450; /* Your progress bar color */
+    height: 100%; /* Full height of the wrapper */
+    line-height: 20px; /* Aligns text vertically */
+    color: white; /* Text color */
+    text-align: center; /* Center the text horizontally */
+    border-radius: 10px; /* Rounded corners for the progress bar */
+    transition: width 0.5s ease-in-out; /* Smooth transition for changes in width */
+}
+
+.experience-timeline {
+    display: flex;
+    gap: 20px;
+}
+
+.experience-timeline .job {
+    background-color: white;
+    margin: 15px 0;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Portfolio Section Styles */
+.portfolio-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 30%;
+    margin: 15px;
+    overflow: hidden; /* For image overflow */
+    border-radius: 10px; /* Optional for rounded corners on images */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 13rem;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Testimonials Section Styles */
+.testimonials-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light background for the section */
+}
+
+.testimonials-carousel .testimonial {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+.testimonials-carousel img {
+    border-radius: 50%; /* Circle image */
+    margin-bottom: 15px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #2c3e50; /* Dark background for the section */
+    color: white;
+    padding: 50px 0;
+}
+
+.contact-form input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff6450;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.social-links a img {
+    width: 24px; /* Size of social icons */
+    margin: 0 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50; /* Matches the contact section */
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/*  Responsive */
+.about-text {
+    flex-basis: 50%;
+}
+
+.about-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-text p {
+    margin-bottom: 1em;
+}
+
+.about-text .contact-me {
+    background-color: #ff6450;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.about-image {
+    flex-basis: 50%;
+    text-align: center; /* Adjust as needed */
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+/* Services Section Styles */
+.services-section {
+    background-color: #f9f9f9; /* Light background for the section */
+    padding: 50px 0;
+}
+
+.services-heading h2,
+.testimonials-heading h2,
+.portfolio-heading h2,
+.experience-heading h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+}
+
+.service-card img {
+    margin-bottom: 15px;
+}
+
+/* Work Experience Section Styles */
+.experience-section {
+    padding: 50px 0;
+}
+
+
+/* Portfolio Section Styles */
+.portfolio-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 30%;
+    margin: 15px;
+    overflow: hidden; /* For image overflow */
+    border-radius: 10px; /* Optional for rounded corners on images */
+}
+
+
+.portfolio-item img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Testimonials Section Styles */
+.testimonials-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light background for the section */
+}
+
+.testimonials-carousel .testimonial {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+.testimonials-carousel img {
+    border-radius: 50%; /* Circle image */
+    margin-bottom: 15px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #2c3e50; /* Dark background for the section */
+    color: white;
+    padding: 50px 0;
+}
+
+.contact-form input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff6450;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.social-links a img {
+    width: 24px; /* Size of social icons */
+    margin: 0 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50; /* Matches the contact section */
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments may be needed */
+@media (max-width: 768px) {
+    .about-content, .service-cards, .portfolio-gallery, .testimonials-carousel {
+        flex-direction: column;
+    }
+    
+    .service-card, .portfolio-item {
+        width: 90%;
+    }
+
+    .about-text, .about-image {
+        flex-basis: 100%;
+    }
+}
+
+
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #fff;
+    color: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6450;
+}
+
+.hire-me {
+    background-color: #ff6450;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-me:hover {
+    background-color: darken(#ff6450, 10%);
+}
+
+/* Intro Section Styles */
+.intro-section {
+    text-align: center;
+    padding: 100px 0 50px; /* Adjust top padding to account for fixed header */
+    background: #eee;
+    margin-top: 50px; /* Same height as header to push down content */
+}
+
+.intro-section h1 {
+    margin: 0;
+    color: #333;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.intro-section p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #ff6450;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darken(#ff6450, 10%);
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.about-section .container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-text {
+    width: 30%;
+}
+
+.about-section .about-text h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about-section .about-text p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-section .about-image {
+    width: 40%;
+}
+
+.about-section .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Additional sections should follow the pattern established above */
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .intro-section h1 {
+        font-size: 38px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .about-section .container {
+        flex-direction: column;
+    }
+
+    .about-section .about-text,
+    .about-section .about-image {
+        width: 100%;
+    }
+
+    .about-section .about-text {
+        order: 2;
+    }
+
+    .about-section .about-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    /* Continue adjusting for other sections as needed */
+}
+
+/* Ensure the colors, fonts, and other details match the design */
