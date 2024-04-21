@@ -14,9 +14,9 @@ header {
 }
 
 .profile {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
+    width: 27rem;
+    height: 42rem;
+    object-fit: contain;
 }
 
 nav ul {
@@ -29,26 +29,34 @@ nav ul li {
 }
 
 .hire-me {
-    background-color: #ff6450;
+    background-color: #E74E4A;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
 
+.logo img {
+    width: 5rem;
+    padding-left: 2rem;
+}
+
 .intro-section {
     text-align: center;
     padding: 50px;
+    padding-bottom: 0px;
     display: flex;
     justify-content: center;
 }
 
 .intro-section-container {
     width: 30rem;
+    padding: 100px 0 50px; /* Adjust top padding to account for fixed header */
+
 }
 
 .btn {
-    background-color: #ff6450;
+    background-color: #E74E4A;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -97,7 +105,7 @@ footer {
 }
 
 .about-text .contact-me {
-    background-color: #ff6450;
+    background-color: #E74E4A;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -140,7 +148,7 @@ footer {
 .about-text .contact-me {
     grid-column: 1 / -1; /* Button will span both columns */
     justify-self: center; /* Aligns the button to the center */
-    background-color: #ff6450;
+    background-color: #E74E4A;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -158,6 +166,16 @@ footer {
 
 .services-heading {
     text-align: center;
+}
+
+.horizontal-line {
+    width: 2rem;
+    height: 1px;
+    background-color: #E74E4A;
+    text-align: center;
+    
+    margin: 1rem;
+
 }
 
 .services-heading h2,
@@ -213,7 +231,7 @@ footer {
 }
 
 .progress-bar {
-    background-color: #ff6450; /* Your progress bar color */
+    background-color: #E74E4A; /* Your progress bar color */
     height: 100%; /* Full height of the wrapper */
     line-height: 20px; /* Aligns text vertically */
     color: white; /* Text color */
@@ -247,6 +265,7 @@ footer {
     flex-wrap: wrap;
 }
 
+
 .portfolio-item {
     width: 30%;
     margin: 15px;
@@ -267,8 +286,26 @@ footer {
 
 /* Testimonials Section Styles */
 .testimonials-section {
+    text-align: center;
     padding: 50px 0;
     background-color: #f9f9f9; /* Light background for the section */
+}
+
+.testimonial {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    border: 2px solid #E74E4A
+}
+
+.testimonials-carousel {
+    display: flex;
+    justify-content: center;
 }
 
 .testimonials-carousel .testimonial {
@@ -281,34 +318,9 @@ footer {
 .testimonials-carousel img {
     border-radius: 50%; /* Circle image */
     margin-bottom: 15px;
+    width: 5rem;
 }
 
-/* Contact Section Styles */
-.contact-section {
-    background-color: #2c3e50; /* Dark background for the section */
-    color: white;
-    padding: 50px 0;
-}
-
-.contact-form input[type="email"] {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #ff6450;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.social-links a img {
-    width: 24px; /* Size of social icons */
-    margin: 0 10px;
-}
 
 /* Footer Styles */
 footer {
@@ -337,7 +349,7 @@ footer p {
 }
 
 .about-text .contact-me {
-    background-color: #ff6450;
+    background-color: #E74E4A;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -435,7 +447,7 @@ footer p {
 
 /* Contact Section Styles */
 .contact-section {
-    background-color: #2c3e50; /* Dark background for the section */
+    background-color: #E74E4A;
     color: white;
     padding: 50px 0;
 }
@@ -448,23 +460,23 @@ footer p {
 }
 
 .contact-form button {
-    background-color: #ff6450;
+    background-color: #E74E4A;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
-.social-links a img {
+.social-links span svg {
     width: 24px; /* Size of social icons */
-    margin: 0 10px;
+    margin: 10px;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2c3e50; /* Matches the contact section */
+    background-color: #CE3931; /* Matches the contact section */
     color: white;
 }
 
@@ -538,11 +550,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff6450;
+    color: #E74E4A;
 }
 
 .hire-me {
-    background-color: #ff6450;
+    background-color: #E74E4A;
     color: white;
     padding: 10px 25px;
     text-decoration: none;
@@ -551,35 +563,67 @@ header nav ul li a:hover {
 }
 
 .hire-me:hover {
-    background-color: darken(#ff6450, 10%);
+    background-color: darken(#E74E4A, 10%);
 }
 
 /* Intro Section Styles */
 .intro-section {
+    height: 90vh;
     text-align: center;
-    padding: 100px 0 50px; /* Adjust top padding to account for fixed header */
-    background: #eee;
+    color: whitesmoke;
+    /* background: radial-gradient(circle, #E74E4A, #CE3931); */
+    background: linear-gradient(to left, #E74E4A, #fff);
+    background: linear-gradient(to left, #E74E4A 55%, whitesmoke 45%);
+
     margin-top: 50px; /* Same height as header to push down content */
 }
 
 .intro-section h1 {
     margin: 0;
-    color: #333;
-    font-size: 48px;
+    font-size: 4.5rem;
+    line-height: 1.3rem;
     line-height: 1.2;
     font-weight: 700;
     margin-bottom: 10px;
 }
+.developer-name {
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+}
+
+/* Assuming you have a div with the class 'textured-text' */
+.textured-text {
+    font-size: 72px;
+    color: transparent;
+    background-image: url('img/texture.jpg');
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block; /* or block, depending on your layout */
+  }
+  
+
+.intro-section h1 span {
+    background-color: #31BCCF;
+    padding: 0px 10px;
+    border-radius: 6px;
+}
+
+.learn-more {
+    color: #E74E4A !important;
+    font-weight: 900;
+    background-color: #31BCCF !important;
+}
 
 .intro-section p {
-    color: #666;
+    color: whitesmoke;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 25px;
 }
 
 .btn {
-    background-color: #ff6450;
+    background-color: #E74E4A;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -589,7 +633,7 @@ header nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: darken(#ff6450, 10%);
+    background-color: darken(#E74E4A, 10%);
 }
 
 /* About Section Styles */

@@ -8,7 +8,9 @@
 </head>
 <body>
     <header>
-        <div class="logo">Your Logo</div>
+        <div class="logo">
+            <img src="img/logo.png" alt="Tech Hoseki Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -22,13 +24,14 @@
 
     <main>
         <section id="home" class="intro-section">
+            <div class="profile-container">
+                <img class="profile" src="img/Tahir with shadow.png" alt="">
+            </div>
             <div class="intro-section-container">
-                <h1>I'm Web Developer <br>Tahir Alauddin</h1>
+                <h1 class="i-am-web-developer">I'm <span>Web  </span><span>Developer</span></h1>
+                <h1 class="developer-name textured-text">Tahir Alauddin</h1>
                 <p>Building software for startups that scales with their businesses. Your next Big-Tech company.</p>
                 <a href="#about" class="btn learn-more">Learn more</a>
-            </div>
-            <div class="profile-container">
-                <img class="profile" src="img/tahir.jpg" alt="">
             </div>
         </section>
 <!-- ... [previous sections of HTML] ... -->
@@ -157,7 +160,6 @@
             <!-- Description can go here if needed -->
         </div>
 
-
     </div>
 
     </div>
@@ -172,10 +174,37 @@
 <div class="testimonials-carousel">
 <!-- TODO: Repeat for each testimonial -->
 <div class="testimonial">
-    <img src="path-to-client-image.jpg" alt="Client Image">
-    <p>Client testimonial...</p>
-    <span class="client-name">John Doe</span>
+    <img src="img/Testimonials/Chandhan.png" alt="Client Image">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <div class="horizontal-line"></div>
+    <span class="client-name">Chandhan</span>
 </div>
+<div class="testimonial">
+    <img src="img/Testimonials/Basit.png" alt="Client Image">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <div class="horizontal-line"></div>
+    <span class="client-name">Basit</span>
+</div>
+<div class="testimonial">
+    <img src="img/Testimonials/Shirine_hegazi.png" alt="Client Image">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <div class="horizontal-line"></div>
+    <span class="client-name">Shirine Hegazi</span>
+</div>
+<div class="testimonial">
+    <img src="img/Testimonials/Lindsaym.png" alt="Client Image">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <div class="horizontal-line"></div>
+    <span class="client-name">Anonymous</span>
+</div>
+<div class="testimonial">
+    <img src="img/Testimonials/Paul.png" alt="Client Image">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <div class="horizontal-line"></div>
+    <span class="client-name">Paul</span>
+</div>
+
+
 <!-- ... more testimonials ... -->
 </div>
 </div>
@@ -183,22 +212,23 @@
 
 <!-- Stay In Touch Section -->
 <section id="contact" class="contact-section">
-<div class="container">
-<div class="contact-heading">
-<h2>Stay In Touch</h2>
-<p>Your invitation to get contacted.</p>
-</div>
-<form class="contact-form">
-<input type="email" placeholder="Enter email address" required>
-<button type="submit" class="btn">Subscribe</button>
-</form>
-<!-- Social Links -->
-<div class="social-links">
-<a href="#" aria-label="Facebook"><img src="path-to-facebook-icon.png" alt="Facebook"></a>
-<a href="#" aria-label="Twitter"><img src="path-to-twitter-icon.png" alt="Twitter"></a>
-<!-- ... more social links ... -->
-</div>
-</div>
+    <div class="container">
+        <div class="contact-heading">
+        <h2>Stay In Touch</h2>
+        <p>Your invitation to get contacted.</p>
+        </div>
+        <form class="contact-form">
+            <input type="email" placeholder="Enter email address" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <!-- Social Links -->
+        <div class="social-links">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+            </span>
+        <!-- ... more social links ... -->
+        </div>
+    </div>
 </section>
 
 
