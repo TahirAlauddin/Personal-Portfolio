@@ -1,0 +1,31 @@
+/* Portfolio Section Styles */
+.portfolio-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.portfolio-item {
+    width: 30%;
+    margin: 15px;
+    overflow: hidden; /* For image overflow */
+    border-radius: 10px; /* Optional for rounded corners on images */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 13rem;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
