@@ -28,6 +28,7 @@
 .experience-timeline {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .experience-timeline .job {

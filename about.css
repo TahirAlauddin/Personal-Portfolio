@@ -34,14 +34,6 @@
     margin-bottom: 1em;
 }
 
-.about-text .contact-me {
-    background-color: #E74E4A;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
 .about-image {
     flex-basis: 50%;
     text-align: center; /* Adjust as needed */
@@ -56,7 +48,7 @@
 
 .about-text {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    /* grid-template-columns: repeat(2, 1fr); Two equal columns */
     grid-template-rows: auto; /* Rows size will be determined by content */
     gap: 20px; /* Adjust the gap between columns as needed */
     margin-bottom: 20px; /* Space before the button */
@@ -81,5 +73,7 @@
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    max-width: 200px; /* Optional: if you want to limit the width of the button */
+    max-width: 200px;
+    text-align: center; 
 }
+

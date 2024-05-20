@@ -53,7 +53,10 @@
     }
 
     .portfolio-item, .service-card {
-        width: 90%;
+        width: 70% !important;
+    }
+    .portfolio-item img {
+        height: 20rem !important;
     }
 
     .about-image, .about-text {
@@ -94,6 +97,15 @@
         display: block;
         order: 2;
     }
+    .service-card {
+        width: 80% !important;
+    }
+    .experience-timeline {
+        flex-direction: column;
+    }
+    .testimonial p {
+        width: 20rem !important;
+    }
 }
 
 
@@ -108,4 +120,8 @@
     .intro-section p {
         font-size: 0.7rem;
     }
+    .testimonial p {
+        width: 15rem !important;
+    }
+
 }
