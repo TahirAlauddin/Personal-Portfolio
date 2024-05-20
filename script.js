@@ -1,3 +1,34 @@
+function openImagePopup(imageSrc) {
+    // Create a modal or popup container
+    const modalContainer = document.createElement('div');
+    modalContainer.classList.add('modal-container');
+
+    // Create an image element
+    const imageElement = document.createElement('img');
+    imageElement.src = imageSrc;
+    imageElement.alt = 'Project Image';
+
+    // Append the image to the modal container
+    modalContainer.appendChild(imageElement);
+
+    // Add the modal container to the body
+    document.body.appendChild(modalContainer);
+
+    // Close the popup when clicked outside the image
+    modalContainer.addEventListener('click', function(event) {
+        if (event.target === modalContainer) {
+            document.body.removeChild(modalContainer);
+        }
+    });
+}
+
+for (let item of document.querySelectorAll('.portfolio-item')) {
+    item.addEventListener('click', (e) => {
+        let src = e.target.getAttribute('src')
+        openImagePopup(src)
+    })
+}
+
 
 document.querySelector('.hamburger').addEventListener('click', function() {
     const nav = document.querySelector('nav ul');
