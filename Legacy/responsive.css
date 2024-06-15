@@ -1,0 +1,127 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .profile {
+        width: 15rem;
+    }
+    .intro-section {
+        flex-direction: column-reverse;
+    }
+    .intro-section div {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+        order: 2;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        display: none; /* Hidden by default */
+        width: 100%; /* Full width */
+        position: absolute;
+        top: 60px; /* Adjust based on your header's height */
+        left: 0;
+        background-color: white;
+        padding: 15px;
+        border-top: 1px solid #ccc; /* Visual separation */
+    }
+
+    header nav ul li {
+        text-align: center; /* Center align the links */
+        padding: 10px 0; /* Add padding */
+    }
+    .container {
+        width: 95%;
+    }
+
+    .i-am-web-developer {
+        font-size: 2.5rem;
+    }
+
+    .developer-name {
+        font-size: 1.3rem;
+    }
+
+    .about-content, .about-section .container, .portfolio-gallery, .service-cards, .testimonials-carousel {
+        flex-direction: column;
+    }
+
+    .portfolio-item, .service-card {
+        width: 70% !important;
+    }
+    .portfolio-item img {
+        height: 20rem !important;
+    }
+
+    .about-image, .about-text {
+        flex-basis: 100%;
+    }
+
+    .about-section .about-image, .about-section .about-text {
+        width: 100%;
+    }
+
+    .about-section .about-text {
+        order: 2;
+    }
+
+    .about-section .about-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        padding: 15px;
+        border-top: 1px solid #ccc;
+    }
+
+    header nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        order: 2;
+    }
+    .service-card {
+        width: 80% !important;
+    }
+    .experience-timeline {
+        flex-direction: column;
+    }
+    .testimonial p {
+        width: 20rem !important;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .i-am-web-developer {
+        font-size: 1.8rem;
+    }
+    .learn-more {
+        font-size: 0.6rem;
+        padding: 8px;
+    }
+    .intro-section p {
+        font-size: 0.7rem;
+    }
+    .testimonial p {
+        width: 15rem !important;
+    }
+
+}

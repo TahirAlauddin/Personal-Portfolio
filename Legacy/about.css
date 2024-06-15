@@ -1,0 +1,79 @@
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.about-heading {
+    text-align: center;
+}
+
+.about-heading h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-text {
+    flex-basis: 50%;
+    display: grid;
+}
+
+.about-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-text p {
+    margin-bottom: 1em;
+}
+
+.about-image {
+    flex-basis: 50%;
+    text-align: center; /* Adjust as needed */
+}
+
+.about-image img {
+    width: 20rem;
+    border-radius: 10px 10px 10px 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); Two equal columns */
+    grid-template-rows: auto; /* Rows size will be determined by content */
+    gap: 20px; /* Adjust the gap between columns as needed */
+    margin-bottom: 20px; /* Space before the button */
+}
+
+.about-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    grid-column: 1 / -1; /* h3 will span both columns */
+}
+
+.about-text p {
+    margin-bottom: 1em;
+    /* No need to specify grid-column here unless you want to change the spanning of specific paragraphs */
+}
+
+.about-text .contact-me {
+    grid-column: 1 / -1; /* Button will span both columns */
+    justify-self: center; /* Aligns the button to the center */
+    background-color: #E74E4A;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 200px;
+    text-align: center; 
+}
+
