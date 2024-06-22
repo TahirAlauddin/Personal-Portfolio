@@ -1,0 +1,148 @@
+.footer-container {
+  font-family: Lexend;
+  padding-bottom: 4rem;
+  max-width: 900px !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e04355;
+}
+
+.footer-title {
+  font-size: 3rem;
+  color: #333;
+  text-align: left;
+}
+
+.footer-subtitle {
+  font-size: 1.5rem;
+  color: rgba(63, 63, 63, 1);
+  text-align: center;
+  margin-top: 10px;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.2;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.footer-text {
+  flex: 1;
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer-description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.contact-btn {
+  background-color: #E74E4A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.contact-btn:hover {
+  background-color: #e04355;
+}
+
+.footer-button {
+  background-color: #E74E4A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.footer-button:hover {
+  background-color: #e04355;
+}
+
+.formclass {
+  background-color: #ffff;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  border-radius: 3rem;
+  margin-top: -150px;
+  box-shadow: 1px 1px 2px;
+}
+
+.footer-image img {
+  width: 37rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 10px;
+  border-radius: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-text {
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .footer-title {
+    text-align: center;
+  }
+
+  .formclass {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .footer-heading {
+    text-align: center;
+  }
+
+  .footer-description {
+    text-align: center;
+  }
+}

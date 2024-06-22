@@ -1,0 +1,107 @@
+.Lexend-bold {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: medium;
+}
+  
+.selected {
+  background: linear-gradient(78deg, #E74E4A 30%, #31BCCF 70%);
+  background-clip: text; /* Standard property (may not be widely supported without prefix) */
+  -webkit-text-fill-color: transparent; /* For WebKit-based browsers (Chrome, Safari) */
+}
+
+.hire-me {
+  background-color: #E74E4A;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  width: 10rem;
+  font-size: 1.5rem;
+}
+
+.hire-me:hover {
+  background-color: darken(#E74E4A, 10%);
+}
+
+.navbar-space {
+  justify-content: space-between;
+}
+
+
+.navbar {
+  font-family: 'Lexend', sans-serif;
+  margin-top: -50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.logo img {
+  height: 4rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-item {
+  color: #000;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: #E74E4A;
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

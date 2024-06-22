@@ -1,4 +1,3 @@
-import React from 'react'
 import './Landing.css'
 import profileImage from '../assets/img/tahir/Tahir with shadow.png'
 import instagramIcon from '../assets/img/logo-instagram.png'; // Update with the path to your Instagram icon
