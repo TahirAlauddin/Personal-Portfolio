@@ -7,8 +7,12 @@ function WorkExperience() {
   return (
 
     <section className="work-experience-section">
-    <h2>What Services I'm Providing</h2>
-    <p>Providing customized web development services.</p>
+    <div className='work-experience-header'>
+      <h2>Work Experience</h2>
+      <div className='work-experience-p'>
+      <p>Seasoned web developer with years of hands-on experience in creating dynamic and user-friendly websites</p>
+      </div>
+    </div>
     <div className="work-experience-container">
       <div className="work-experience-box">
         <div className='work-experience-heading'>

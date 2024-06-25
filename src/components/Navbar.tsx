@@ -58,7 +58,7 @@ const Navbar = () => {
             </a>
             <a
               href="#contact"
-              className={`hire-me ${selected === "contact" ? "selected" : ""}`}
+              className={`hire-me`}
               onClick={() => handleMenuItemClick("contact")}
             >
               Hire Me

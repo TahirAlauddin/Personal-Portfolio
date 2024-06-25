@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Image.css';
 
 const ImageGallery = ({ projectId }) => {
+
   
   const projects = [
     {
@@ -9,10 +10,15 @@ const ImageGallery = ({ projectId }) => {
       "title": "All Book Quotes",
       "description": "A Directory of all the books",
       "images": [
-        "https://i.postimg.cc/NjBFrdHg/large.png",
+        "src/assets/img/Portfolio/Allbooksquotes Portfolio/home-page.png",
+        "src/assets/img/Portfolio/Allbooksquotes Portfolio/quotes-page-related-page.png",
+        "src/assets/img/Portfolio/Allbooksquotes Portfolio/home-page-books.png",
+        "src/assets/img/Portfolio/Allbooksquotes Portfolio/quotes-page1.png",
+        "src/assets/img/Portfolio/Allbooksquotes Portfolio/quotes-page2.png",
         "https://i.postimg.cc/Xq5q9hLv/home-page-books.png",
         "https://i.postimg.cc/ncvMzyMR/quotes-page1.png",
-        "https://i.postimg.cc/KvXRmGc3/quotes-page2.png"
+        "https://i.postimg.cc/KvXRmGc3/quotes-page2.png",
+        "https://i.postimg.cc/ncvMzyMR/quotes-page1.png",
       ]
     },
     {
@@ -20,10 +26,13 @@ const ImageGallery = ({ projectId }) => {
       "title": "AspectGaming",
       "description": "Your All in One Gaming Software",
       "images": [
-        "https://i.postimg.cc/vm50SHm7/Cleanup.png",
-        "https://i.postimg.cc/V6RDmGnd/Contact-Us-Page.png",
-        "https://i.postimg.cc/k49Tr3V0/home.png",
-        "https://i.postimg.cc/7ht9T5B4/License-Page.png"
+        "src/assets/img/Portfolio/AspectGaming/home.png",
+        "src/assets/img/Portfolio/AspectGaming/Cleanup.png",
+        "src/assets/img/Portfolio/AspectGaming/Contact Us Page.png",
+        "src/assets/img/Portfolio/AspectGaming/GPU page.png",
+        "src/assets/img/Portfolio/AspectGaming/License Page.png",
+        "src/assets/img/Portfolio/AspectGaming/Memory Tweaks.png",
+        "src/assets/img/Portfolio/AspectGaming/Mouse Keyboard Tweaks.png",       
       ]
     },
     {
@@ -31,10 +40,12 @@ const ImageGallery = ({ projectId }) => {
       "title": "Instagnite",
       "description": "Instagram Tools at one place",
       "images": [
-        "https://i.postimg.cc/sghmvD5F/account-details.png",
-        "https://i.postimg.cc/R0xRf5TW/actions.png",
-        "https://i.postimg.cc/s2PJ46nw/advance-options.png",
-        "https://i.postimg.cc/LXH3CtwR/bot-options.png"
+        "src/assets/img/Portfolio/Instagnite/account-details.PNG",
+        "src/assets/img/Portfolio/Instagnite/actions.PNG",
+        "src/assets/img/Portfolio/Instagnite/advance-options.PNG",
+        "src/assets/img/Portfolio/Instagnite/bot-options.PNG",
+        "src/assets/img/Portfolio/Instagnite/comments-page.PNG",
+        "src/assets/img/Portfolio/Instagnite/story-options-page.PNG",
       ]
     },
     {
@@ -42,10 +53,29 @@ const ImageGallery = ({ projectId }) => {
       "title": "Konnected Reverse Raffle",
       "description": "A fun to play Game with friends",
       "images": [
-        "https://i.postimg.cc/h4XpHrhP/invalid-license-key.png",
-        "https://i.postimg.cc/MZgdxQj0/krr-admin-license.png",
-        "https://i.postimg.cc/02mZNypT/krr-admin-user-list.png",
-        "https://i.postimg.cc/qvTw6Hwz/krr-home-industrial-final-10.png"
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/invalid-license-key.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-license.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-user-list.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-aqua-grid.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-black-grid.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-flower-come-back.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-flower-eliminated.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-flower-final-10.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-flower-grid.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-industrial-come-back.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-industrial-eliminated.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-industrial-final-10.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-industrial-grid.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-pink-grid.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-purple-grid.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-sunset-come-back.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-sunset-eliminated.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-sunset-final-10.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-sunset-grid.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-home-yellow-grid.PNG",
+        "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/valid-license-key.PNG",
       ]
     },
     {
@@ -53,10 +83,13 @@ const ImageGallery = ({ projectId }) => {
       "title": "Vital AI",
       "description": "HealthCare Management System",
       "images": [
-        "https://i.postimg.cc/qqct9S35/appointments.png",
-        "https://i.postimg.cc/c1f8ggbB/diagnoses.png",
-        "https://i.postimg.cc/dtBknMv7/home.png",
-        "https://i.postimg.cc/WbjqMpRL/patients.png"
+        "src/assets/img/Portfolio/Vital AI/home.png",
+        "src/assets/img/Portfolio/Vital AI/appointments.png",
+        "src/assets/img/Portfolio/Vital AI/diagnoses.png",
+        "src/assets/img/Portfolio/Vital AI/patients-detail.png",
+        "src/assets/img/Portfolio/Vital AI/patients.png",
+        "src/assets/img/Portfolio/Vital AI/questionnaire.png",
+        "src/assets/img/Portfolio/Vital AI/treatment-page.png",
       ]
     },
     {
@@ -64,15 +97,37 @@ const ImageGallery = ({ projectId }) => {
       "title": "Jewel",
       "description": "A Jewelery Store Web App",
       "images": [
-        "https://i.postimg.cc/tTpGBc9T/invoice-detail.png",
-        "https://i.postimg.cc/MT52NYGY/invoices.png",
-        "https://i.postimg.cc/NFPhffm9/login.png",
-        "https://i.postimg.cc/fybnN0tQ/orders.png"
+        "src/assets/img/Portfolio/JewelBox/login.png",
+        "src/assets/img/Portfolio/JewelBox/add-customer.png",
+        "src/assets/img/Portfolio/JewelBox/customers.png",
+        "src/assets/img/Portfolio/JewelBox/invoice-detail.png",
+        "src/assets/img/Portfolio/JewelBox/invoices.png",
+        "src/assets/img/Portfolio/JewelBox/order-detail-1.png",
+        "src/assets/img/Portfolio/JewelBox/order-detail-2.png",
+        "src/assets/img/Portfolio/JewelBox/order-detail-3.png",
+        "src/assets/img/Portfolio/JewelBox/orders.png",
       ]
     },
-
+    {
+      "id": 7,
+      "title": "Starc Assistant",
+      "description": "A Jewellery Store Web App",
+      "images": [
+        "src/assets/img/Portfolio/Starc Assistant/login.png",
+        "src/assets/img/Portfolio/Starc Assistant/home.png",
+        "src/assets/img/Portfolio/Starc Assistant/chatbot-interface.png",
+        "src/assets/img/Portfolio/Starc Assistant/machines-detail.png",
+        "src/assets/img/Portfolio/Starc Assistant/machines-list.png",
+        "src/assets/img/Portfolio/Starc Assistant/previous-page-topics.png",
+        "src/assets/img/Portfolio/Starc Assistant/topic-detail-page.png",
+        "src/assets/img/Portfolio/Starc Assistant/tornitura-bot.png",
+        "src/assets/img/Portfolio/Starc Assistant/training-list-admin.png",
+        "src/assets/img/Portfolio/Starc Assistant/welcome.png",
+      ]
+    }
    
   ];
+
 
   const [largeImage, setLargeImage] = useState(null);
 
@@ -82,26 +137,33 @@ const ImageGallery = ({ projectId }) => {
     return <div>Project not found</div>;
   }
 
+  let portfoliosection = document.getElementById('portfolio')
+  portfoliosection.style.backgroundColor = '#cbcbcb'
+
   return (
+    <div className='image-gallery-parent'>
     <div className="image-gallery">
       <div className="large-image">
-        <img src={largeImage || project.images[0]} alt="Large" /> {/* Default to the first image */}
+        <img src={largeImage || project.images[0]} alt="Large" />
       </div>
       <div className="project-details">
         <h2>{project.title}</h2>
         <p>{project.description}</p>
       </div>
-      <div className="small-images">
-        {project.images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Small ${index + 1}`}
-            onClick={() => setLargeImage(image)}
-          />
-        ))}
+      <div className="small-images-container">
+        <div className="small-images">
+          {project.images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Small ${index + 1}`}
+              onClick={() => setLargeImage(image)}
+              />
+            ))}
+        </div>
       </div>
     </div>
+  </div>
   );
 };
 

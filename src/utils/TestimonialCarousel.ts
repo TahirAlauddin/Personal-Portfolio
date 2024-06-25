@@ -2,7 +2,7 @@ function TestimonialCarousel() {
   let index = 0;
   const testimonials = document.querySelectorAll<HTMLElement>('.testimonial');
   const totalTestimonials = testimonials.length;
-  let itemsToShow = window.innerWidth < 768 ? 1 : 2;
+  let itemsToShow = window.innerWidth < 1200 ? 1 : 2;
 
   function updateTestimonialsVisibility() {
     testimonials.forEach((testimonial, i) => {
@@ -13,14 +13,23 @@ function TestimonialCarousel() {
   updateTestimonialsVisibility();
 
   function showNextTestimonial() {
-    testimonials[index].style.opacity = '0';
+    for (let i = 0; i < itemsToShow; i++) {
+      testimonials[index+i].style.opacity = '0';
+    }
 
     setTimeout(() => {
-      testimonials[index].style.display = 'none';
+      for (let i = 0; i < itemsToShow; i++) {
+        const currentIndex = (index + i) % totalTestimonials;
+        testimonials[currentIndex].style.display = 'none';
+      }
       index = (index + itemsToShow) % totalTestimonials;
       updateTestimonialsVisibility();
-      testimonials[index].style.opacity = '1';
+      for (let i = 0; i < itemsToShow; i++) {
+        const newIndex = (index + i) % totalTestimonials;
+        testimonials[newIndex].style.opacity = '1';
+      }
     }, 300); // Match the duration of the fade-out animation
+    
   }
 
   // Set interval for carousel

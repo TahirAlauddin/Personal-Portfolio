@@ -21,13 +21,11 @@ return (
                     </h3>
 
                     <div className="social-icons">
-                        <a href="https://www.instagram.com">
-                            <img src={instagramIcon} alt="Instagram" className="icon" />
-                        </a>
+                        
                         <a href="https://www.facebook.com">
                             <img src={facebookIcon} alt="Facebook" className="icon" />
                         </a>
-                        <a href="https://www.linkedin.com">
+                        <a href="https://www.linkedin.com/in/tahiralauddin">
                             <img src={linkedinIcon} alt="LinkedIn" className="icon" />
                         </a>
                     </div>
@@ -37,19 +35,21 @@ return (
                     <p className="text-gray">Your email will not be published</p>
                     <Form className="m-5">
                         <Form.Group
-                            className="mb-3"
+                            className="mb-4"
                             controlId="exampleForm.ControlInput1"
                         >
-                            <Form.Control type="name" placeholder="Name" className="mb-3" />
+                            <Form.Control type="name" placeholder="Name" className="mb-4" />
                             <Form.Control
                                 type="email"
                                 placeholder="Email"
-                                className="mb-3"
+                                className="mb-4"
                             />
                             <Form.Control
+                                as="textarea"
+                                rows={3}
                                 type="message"
                                 placeholder="Message"
-                                className="mb-3"
+                                className="mb-4"
                             />
                         </Form.Group>
                         <button className="footer-button">Submit</button>

@@ -5,9 +5,10 @@
   font-size: 1.5rem;
 }
 
-.sampleclass{
+.sampleclass {
   max-width: 100% !important;
   padding-bottom: 150px;
+  min-height: 35rem;
 }
 
 .testimonial {
@@ -55,14 +56,13 @@
   border: 2px solid #E74E4A;
   width: 6rem;
   height: 6rem;
-  border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #e74c3c;
 }
 
 .testimonials-carousel {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .testimonial-container {

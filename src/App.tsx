@@ -5,12 +5,17 @@ import About from './components/About'
 import Services from './components/Services'
 import WorkExperience from './components/WorkExperience';
 import Testimonial from './components/Testimonial'
-import Slider from './components/Slider.jsx'
-import Footer from './components/Footer.jsx'
+import Footer2 from './components/Footer.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Newslider from './components/Newslider.tsx'
 
-function App() {
+
+
+
+function App() { 
 
   return (
     <>
@@ -19,9 +24,11 @@ function App() {
     <About />
     <Services />
     <WorkExperience />
-    <Slider />
+    <Newslider/>
     <Testimonial />
-    <Footer/>
+    <Footer2/>
+    
+    
     </>
   )
 }

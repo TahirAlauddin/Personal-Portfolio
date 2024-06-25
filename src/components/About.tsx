@@ -3,7 +3,8 @@ import aboutImage from '../assets/img/about.jpg';
 
 const About = () => {
   return (
-    <div id='about' className="about-container">
+    <div className='about-parent'>
+      <div id='about' className="about-container">
       <h2 className="about-title">About Me</h2>
       <p className="about-subtitle">
         Passionate web developer dedicated to creating seamless and innovative web experiences.
@@ -25,6 +26,7 @@ const About = () => {
           <img src={aboutImage} alt="About" />
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -1,7 +1,15 @@
 .about-container {
-  /* padding: 2rem; */
   font-family: Lexend;
   padding-bottom: 4rem;
+  max-width: 900px !important;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
+}
+
+.about-parent {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
 }
 
 .about-title {
@@ -18,12 +26,12 @@
   max-width: 40rem; /* Adjust the width as needed */
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.2; 
+  line-height: 1.2;
 }
 
 .about-content {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap; /* Wrap the content on smaller screens */
   justify-content: space-between;
   margin-top: 40px;
 }
@@ -31,7 +39,9 @@
 .about-text {
   flex: 1;
   padding-right: 20px;
-  padding-left: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .about-heading {
@@ -74,4 +84,42 @@
   object-fit: cover;
   border-radius: 10px;
   border-radius: 1rem;
+}
+
+
+@media (max-width: 940px) { 
+  .about-content {
+    margin: 20px; /* Add margin top on smaller screens */
+  }
+}
+
+
+@media (max-width: 768px) { 
+  .about-container {
+    padding: 2rem; /* Add padding all around on smaller screens */
+  }
+
+  .about-content {
+    flex-direction: column; 
+    margin-top: 20px; /* Add margin top on smaller screens */
+  }
+
+  .about-text {
+    padding: 0 1rem; /* Add horizontal padding to the text */
+    margin-bottom: 2rem; /* Add spacing below text */
+  }
+
+  .about-image {
+    margin: 0 -1rem 2rem -1rem; /* Add negative margins for better spacing */
+  }
+
+  .about-image img {
+    max-width: 100%; 
+    margin: 0 auto; /* Center the image within its container */
+  }
+  
+  .about-subtitle {
+    max-width: 100%;
+    margin-top: 10px; /* Add margin top on smaller screens */
+  }
 }
