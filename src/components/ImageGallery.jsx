@@ -15,10 +15,6 @@ const ImageGallery = ({ projectId }) => {
         "src/assets/img/Portfolio/Allbooksquotes Portfolio/home-page-books.png",
         "src/assets/img/Portfolio/Allbooksquotes Portfolio/quotes-page1.png",
         "src/assets/img/Portfolio/Allbooksquotes Portfolio/quotes-page2.png",
-        "https://i.postimg.cc/Xq5q9hLv/home-page-books.png",
-        "https://i.postimg.cc/ncvMzyMR/quotes-page1.png",
-        "https://i.postimg.cc/KvXRmGc3/quotes-page2.png",
-        "https://i.postimg.cc/ncvMzyMR/quotes-page1.png",
       ]
     },
     {
