@@ -140,7 +140,7 @@ const ImageGallery = ({ projectId }) => {
     <div className='image-gallery-parent'>
     <div className="image-gallery">
       <div className="large-image">
-        <img ={largeImage || project.images[0]} alt="Large" />
+        <img src={largeImage || project.images[0]} alt="Large" />
       </div>
       <div className="project-details">
         <h2>{project.title}</h2>
@@ -151,7 +151,7 @@ const ImageGallery = ({ projectId }) => {
           {project.images.map((image, index) => (
             <img
               key={index}
-              ={image}
+              src={image}
               alt={`Small ${index + 1}`}
               onClick={() => setLargeImage(image)}
               />
