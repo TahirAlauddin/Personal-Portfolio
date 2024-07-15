@@ -1,7 +1,7 @@
 import "./Landing.css";
-import profileImage from "../assets/img/tahir/Tahir with shadow.png";
-import facebookIcon from "../assets/img/logo-facebook.png"; // Update with the path to your Facebook icon
-import linkedinIcon from "../assets/img/logo-linkedin.png"; // Update with the path to your LinkedIn icon
+import profileImage from "../../public/assets/img/tahir/Tahir with shadow.png";
+import facebookIcon from "../../public/assets/img/logo-facebook.png"; // Update with the path to your Facebook icon
+import linkedinIcon from "../../public/assets/img/logo-linkedin.png"; // Update with the path to your LinkedIn icon
 
 function Landing() {
   return (

@@ -1,13 +1,13 @@
 import "./Footer.css";
-import aboutImage from "../assets/img/about.jpg";
-import fb from "../assets/img/logo-facebook.png";
-import insta from "../assets/img/logo-instagram.png";
-import linkedin from "../assets/img/logo-linkedin.png";
+import aboutImage from  "../../public/assets/img/about.jpg";
+import fb from "../../public/assets/img/logo-facebook.png";
+import insta from "../../public/assets/img/logo-instagram.png";
+import linkedin from "../../public/assets/img/logo-linkedin.png";
 import { Button, Row } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
-import instagramIcon from "../assets/img/logo-instagram.png"; // Update with the path to your Instagram icon
-import facebookIcon from "../assets/img/logo-facebook.png"; // Update with the path to your Facebook icon
-import linkedinIcon from "../assets/img/logo-linkedin.png"; // Update with the path to your LinkedIn icon
+import instagramIcon from "../../public/assets/img/logo-instagram.png"; // Update with the path to your Instagram icon
+import facebookIcon from "../../public/assets/img/logo-facebook.png"; // Update with the path to your Facebook icon
+import linkedinIcon from "../../public/assets/img/logo-linkedin.png"; // Update with the path to your LinkedIn icon
 
 const Footer2 = () => {
 return (

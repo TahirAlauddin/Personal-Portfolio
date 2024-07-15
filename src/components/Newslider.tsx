@@ -1,3 +1,6 @@
+// Image Imports
+import next from "../../public/assets/img/next.png";
+import prev from "../../public/assets/img/prev.png";
 import React, { useState, useRef } from 'react';
 import './Newslider.css'; 
 import ImageGallery from './ImageGallery.jsx';
@@ -45,9 +48,6 @@ interface ModalProps {
   onClose: () => void;
 }
 
-// Image Imports
-import next from "../assets/img/next.png";
-import prev from "../assets/img/prev.png";
 
 function Modal({ children, onClose }: ModalProps) {
   return (
