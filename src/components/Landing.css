@@ -1,5 +1,5 @@
 .landing-container {
-  font-family: Lexend ;
+  font-family: Lexend;
   font-size: 1.5rem;
   margin: 0;
   padding: 0;
@@ -9,28 +9,44 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
- 
 }
-.landing-parent{
+.landing-parent {
   display: flex;
   justify-content: center; /* Horizontally center */
   align-items: center;
   margin-top: -70px;
-   
 }
 
 .content {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 .title {
-  color: #E74E4A;
+  color: #e74e4a;
   font-size: 3rem;
 }
 
 .heading {
   font-size: 4.5rem;
   margin: 10px 0;
+}
+
+.wave {
+  display: inline-block;
+  animation: waveAnimation 1s ease-in-out 4;
+  transform-origin: bottom right;
+}
+
+@keyframes waveAnimation {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 25deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
 }
 
 .name {
@@ -47,7 +63,7 @@
 }
 
 .download-btn {
-  background-color: #E74E4A;
+  background-color: #e74e4a;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -59,12 +75,11 @@
 
 .download-btn:hover {
   background-color: #e04355;
-  
 }
 
 .social-icons {
-    display: flex;
-    margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 
 .social-icons img {
@@ -74,10 +89,12 @@
   margin-right: 5px;
   color: #6c757d;
   cursor: pointer;
+  transform: translateY(0px);
+  transition: 0.5s;
 }
 
-.social-icons i:hover {
-  color: #ff4c60;
+.social-icons img:hover {
+  transform: translateZ(50px) translateY(-5px);
 }
 
 .image-container {
@@ -85,28 +102,95 @@
 }
 
 .image-wrapper {
-    position: relative;
-    display: inline-block;
-    /* background: linear-gradient(78.95deg, rgba(49, 188, 207, 0.5082) 9.4%, rgba(231, 78, 74, 0.616) 87.61%); */
-    background-image: url('../assets/img/Ellipse.png');
-    background-size: contain; /* Adjust as needed: cover, contain, or specific size */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-  }
-  
-  .profile-image {
-    display: block;
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
-    padding: 3rem;
-  }
-
-.download-btn::after {
-    content: url('../assets/img/download-icon.png');
-    padding-left: 10px
+  position: relative;
+  display: inline-block;
+  perspective: 10px;
 }
 
+.profile-image-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/Ellipse.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateZ(-20px);
+  animation: slideUp 0.8s ease-in-out forwards;
+}
+
+.profile-image {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: auto;
+  padding: 3rem;
+  z-index: 100;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateZ(-20px);
+  }
+  to {
+    transform: translateZ(0px);
+  }
+}
+
+.auto-show {
+  animation: autoShowAnimation both;
+  animation-timeline: view(30% auto);
+}
+
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.auto-show-left {
+  animation: autoShowAnimationLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes autoShowAnimationLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+.auto-show-right {
+  animation: autoShowAnimationRight linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes autoShowAnimationRight {
+  from {
+    opacity: 0;
+    transform: translateX(200px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+.download-btn::after {
+  content: url("../assets/img/download-icon.png");
+  padding-left: 10px;
+}
 
 /* Media Queries */
 

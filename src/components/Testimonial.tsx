@@ -1,41 +1,70 @@
-import './Testimonial.css'
-import Testimonials from '../utils/Testimonials';
-import TestimonialCarousel from '../utils/TestimonialCarousel'
-import { useEffect } from 'react';
+import "./Testimonial.css";
+import Testimonials from "../utils/Testimonials";
+import { useEffect, useState } from "react";
 
-function Testimonial() {
+const Testimonial = () => {
+  const [position, setPosition] = useState(1);
+  const maxPosition = Testimonials.length;
 
-  useEffect(TestimonialCarousel, []); // Run this effect only once, on mount
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPosition((prevPosition) =>
+        prevPosition < maxPosition ? prevPosition + 1 : 1
+      );
+    }, 5000);
 
-    
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const carousel = document.getElementById("carousel") as HTMLElement;
+    if (carousel) {
+      carousel.style.setProperty("--position", position.toString());
+    }
+  }, [position]);
+
   return (
-   <div className='sampleclass'>
-     <section id="testimonials" className="testimonials-section p-4 " >
-      <div className="testimonial-container">
-        <div className="testimonials-heading">
-          <h2>What My Clients Say</h2>
-        </div>
-
-        <div className="testimonials-carousel">
+    <div className="testimonial-container">
+      <div className="testimonials-heading">
+        <h2>What My Clients Say</h2>
+      </div>
+      <div className="carousel-container-testimonial">
+        {[...Array(maxPosition).keys()].map((i) => {
+          const nthplace = i + 1;
+          return (
+            <input
+              key={nthplace}
+              style={
+                { "--nthplace": nthplace.toString() } as React.CSSProperties
+              }
+              type="radio"
+              name="position"
+              checked={position === nthplace}
+              onClick={() => setPosition(nthplace)}
+            />
+          );
+        })}
+        <main id="carousel">
           {Testimonials.map((testimonial, index) => (
-            <div className="testimonial" key={index}>
-              <div className='testimonial-header'>
-                <img src={testimonial.imgSrc} alt="Client Image" />
-                <div className='client-information'>
-                  <span className="client-name">{testimonial.clientName}</span>
-                  <span className="client-location">{testimonial.clientLocation}</span>
-                </div>
-              </div>
-              <p>{testimonial.comment}</p>
-              <div className="horizontal-line"></div>
+            <div
+              key={index}
+              className="item"
+              style={
+                {
+                  "--offset": (index + 1).toString(),
+                } as React.CSSProperties
+              }
+            >
+              <img src={testimonial.imgSrc} alt="Client Image" />
+              <h3 className="client-name">{testimonial.clientName}</h3>
+              <p className="client-country">{testimonial.clientLocation}</p>
+              <p className="testimonial">{testimonial.comment}</p>
             </div>
           ))}
-        </div>
+        </main>
       </div>
-    </section>
-   </div>
+    </div>
   );
+};
 
-}
-
-export default Testimonial
+export default Testimonial;

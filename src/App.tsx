@@ -27,8 +27,6 @@ function App() {
     <Newslider/>
     <Testimonial />
     <Footer2/>
-    
-    
     </>
   )
 }
