@@ -5,37 +5,37 @@ import ImageGallery from './ImageGallery.jsx';
 const IMAGE_URLS = [
   {
     id: 4,
-    url: "src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.PNG",
+    url: "/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.PNG",
     alt: "slide_image4",
   },
   {
     id: 5,
-    url: "src/assets/img/Portfolio/Vital AI/home.png",
+    url: "/assets/img/Portfolio/Vital AI/home.png",
     alt: "slide_image5",
   },
   {
     id: 6,
-    url: "src/assets/img/Portfolio/JewelBox/login.png",
+    url: "/assets/img/Portfolio/JewelBox/login.png",
     alt: "slide_image6",
   },
   {
     id: 7,
-    url: "src/assets/img/Portfolio/Starc Assistant/login.png",
+    url: "/assets/img/Portfolio/Starc Assistant/login.png",
     alt: "slide_image7",
   },
   {
     id: 3,
-    url: "src/assets/img/Portfolio/Instagnite/account-details.PNG",
+    url: "/assets/img/Portfolio/Instagnite/account-details.PNG",
     alt: "slide_image3",
   },
   {
     id: 1,
-    url: "src/assets/img/Portfolio/Allbooksquotes Portfolio/home-page.png",
+    url: "/assets/img/Portfolio/Allbooksquotes Portfolio/home-page.png",
     alt: "slide_image",
   },
   {
     id: 2,
-    url: "src/assets/img/Portfolio/AspectGaming/home.png",
+    url: "/assets/img/Portfolio/AspectGaming/home.png",
     alt: "slide_image2",
   },
 ];
@@ -54,7 +54,7 @@ function Modal({ children, onClose }: ModalProps) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button onClick={onClose} className="modal-close-button">
-          <img src="src/assets/img/cross.png" alt="Close" />
+          <img src="/assets/img/cross.png" alt="Close" />
         </button>
         {children}
       </div>

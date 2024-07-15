@@ -5,11 +5,11 @@ import ImageGallery from './ImageGallery.jsx';
 
 const IMAGE_URLS = [
 
-  { id: 3, url: 'src/assets/img/Portfolio/Instagnite/story-options-page.PNG' },
-  { id: 4, url: 'src/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.PNG' },
-  { id: 5, url: 'src/assets/img/Portfolio/Vital AI/home.png' },
-  { id: 1, url: 'src/assets/img/Portfolio/Allbooksquotes Portfolio/home-page.png' },
-  { id: 2, url: 'src/assets/img/Portfolio/AspectGaming/home.png' },
+  { id: 3, url: '/assets/img/Portfolio/Instagnite/story-options-page.PNG' },
+  { id: 4, url: '/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.PNG' },
+  { id: 5, url: '/assets/img/Portfolio/Vital AI/home.png' },
+  { id: 1, url: '/assets/img/Portfolio/Allbooksquotes Portfolio/home-page.png' },
+  { id: 2, url: '/assets/img/Portfolio/AspectGaming/home.png' },
 
 ];
 
@@ -27,7 +27,7 @@ function Modal({ children, onClose }: ModalProps) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button onClick={onClose} className="modal-close-button">
-          <img src="src/assets/img/cross.png" alt="Close" />
+          <img src="/assets/img/cross.png" alt="Close" />
         </button>
         {children}
       </div>
