@@ -1,5 +1,8 @@
 import "./Landing.css";
-import profileImage from "../../public/assets/img/tahir/Tahir with shadow.png";
+// import profileImage from "../../public/assets/img/tahir/Tahir with shadow.png";
+import profileImage from "../../public/assets/img/tahir/Tahir with shadow.webp";
+import profileImageS from "../../public/assets/img/tahir/Tahir with shadow - 500.webp";
+import profileImageM from "../../public/assets/img/tahir/Tahir with shadow - 700.webp";
 import facebookIcon from "../../public/assets/img/logo-facebook.png"; // Update with the path to your Facebook icon
 import linkedinIcon from "../../public/assets/img/logo-linkedin.png"; // Update with the path to your LinkedIn icon
 
@@ -36,7 +39,8 @@ function Landing() {
           <div className="image-wrapper">
             <div className="profile-image-bg"></div>
             <img
-              src={profileImage}
+              srcSet={`${profileImageS} 600w, ${profileImageM} 1200w, ${profileImage} 2000w`}
+              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 2000px"
               alt="Tahir Alauddin"
               className="profile-image"
             />

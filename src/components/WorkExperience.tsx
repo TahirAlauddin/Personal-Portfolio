@@ -28,10 +28,12 @@ function WorkExperience() {
             </h3>
           </div>
           <p>
-            Crafting intuitive and efficient desktop applications tailored for
-            seamless performance on Windows, macOS, and Linux. Prioritizing user
-            experience and functionality to deliver solutions that fit your
-            business needs.
+          - Built a Full Stack Web Application for a Lawyer.
+          <br />
+          - Helped out Bachelor, Master students with their
+          Research and Projects.
+          <br />
+          - Built multiple projects for local outsourcers
           </p>
           <div className="progress-bar-wrapper">
             <div className="progress-bar-title">Python Developer</div>
@@ -56,10 +58,7 @@ function WorkExperience() {
             </h3>
           </div>
           <p>
-            Building modern and responsive websites that provide a compelling
-            user experience. Specializing in creating custom websites that are
-            not only visually appealing but also fully functional, accessible,
-            and SEO-friendly.
+          I have been working for Fiverr for more than two years. During this time frame I experienced and faced a lot of challenges. I learned new techniques and methods to solve business problems via SaaS and Microservice Web Applications. Surely there were some hardships along the way. But overall it was an astonishing experience.
           </p>
           <div className="progress-bar-wrapper">
             <div className="progress-bar-title">Software Development</div>
