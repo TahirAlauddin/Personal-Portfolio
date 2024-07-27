@@ -8,37 +8,37 @@ import ImageGallery from './ImageGallery.jsx';
 const IMAGE_URLS = [
   {
     id: 4,
-    url: "/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.PNG",
+    url: "/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.webp",
     alt: "slide_image4",
   },
   {
     id: 5,
-    url: "/assets/img/Portfolio/Vital AI/home.png",
+    url: "/assets/img/Portfolio/Vital AI/home.webp",
     alt: "slide_image5",
   },
   {
     id: 6,
-    url: "/assets/img/Portfolio/JewelBox/login.png",
+    url: "/assets/img/Portfolio/JewelBox/login.webp",
     alt: "slide_image6",
   },
   {
     id: 7,
-    url: "/assets/img/Portfolio/Starc Assistant/login.png",
+    url: "/assets/img/Portfolio/Starc Assistant/login.webp",
     alt: "slide_image7",
   },
   {
     id: 3,
-    url: "/assets/img/Portfolio/Instagnite/account-details.PNG",
+    url: "/assets/img/Portfolio/Instagnite/account-details.webp",
     alt: "slide_image3",
   },
   {
     id: 1,
-    url: "/assets/img/Portfolio/Allbooksquotes Portfolio/home-page.png",
+    url: "/assets/img/Portfolio/Allbooksquotes Portfolio/home-page.webp",
     alt: "slide_image",
   },
   {
     id: 2,
-    url: "/assets/img/Portfolio/AspectGaming/home.png",
+    url: "/assets/img/Portfolio/AspectGaming/home.webp",
     alt: "slide_image2",
   },
 ];
