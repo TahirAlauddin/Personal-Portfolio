@@ -252,6 +252,7 @@ export default function Carousel() {
                   alt={`carousel_image_${index}`}
                   className="carousel-image"
                   draggable={false}
+                  loading="lazy"
                   onClick={() => handleImageClick(image.id)}
                   style={{ cursor: 'grab', width: '562px', height: '238px' }}
                 />

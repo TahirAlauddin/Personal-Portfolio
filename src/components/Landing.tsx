@@ -6,6 +6,8 @@ import profileImageM from "../../public/assets/img/tahir/Tahir with shadow - 700
 import facebookIcon from "../../public/assets/img/logo-facebook.png"; // Update with the path to your Facebook icon
 import linkedinIcon from "../../public/assets/img/logo-linkedin.png"; // Update with the path to your LinkedIn icon
 
+declare const Calendly: any;
+
 function Landing() {
   return (
     <div className="landing-parent">
@@ -23,8 +25,8 @@ function Landing() {
             Building software for startups that scales with their businesses.
             Your next Big-Tech company.
           </p>
-          <a href="https://wa.me/923233428060">
-            <button className="contact-btn">Get in Touch</button>
+          <a href="#" onClick={() => { Calendly.initPopupWidget({ url: 'https://calendly.com/tahiralauddin7/30min' }); return false; }}>
+          <button className="contact-btn">Let's Talk on a Call</button>
           </a>
           <div className="social-icons">
             <a href="">

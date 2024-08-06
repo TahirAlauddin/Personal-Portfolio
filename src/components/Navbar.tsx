@@ -56,13 +56,9 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <a
-              href="#contact"
-              className={`hire-me`}
-              onClick={() => handleMenuItemClick("contact")}
-            >
-              Hire Me
-            </a>
+            <a href="https://wa.me/923233428060"
+            className={`hire-me`}>Whatsapp</a>
+
           </div>
           <button
             className="menu-toggle"

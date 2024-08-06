@@ -5,7 +5,7 @@ import About from './components/About'
 import Services from './components/Services'
 import WorkExperience from './components/WorkExperience';
 import Testimonial from './components/Testimonial'
-import Footer2 from './components/Footer.jsx'
+import Footer from './components/Footer.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "slick-carousel/slick/slick.css";
@@ -19,14 +19,22 @@ function App() {
 
   return (
     <>
-    <Navbar />
-    <Landing />
-    <About />
-    <Services />
-    <WorkExperience />
-    <Newslider/>
-    <Testimonial />
-    <Footer2/>
+    <main>
+      <header>
+        <Navbar />
+      </header>
+      <article>
+        <Landing />
+        <About />
+        <Services />
+        <WorkExperience />
+        <Newslider/>
+        <Testimonial />
+      </article>
+    </main>
+    <footer>
+    <Footer/>
+    </footer>
     </>
   )
 }
