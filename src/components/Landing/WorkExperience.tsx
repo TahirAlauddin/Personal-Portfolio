@@ -1,6 +1,6 @@
-import fiverLogo from "../../public/assets/img/fiverr.png";
-import localLogo from "../../public/assets/img/local.png";
-import upworkLogo from "../../public/assets/img/upwork.png";
+import fiverLogo from "/assets/img/fiverr.png";
+import localLogo from "/assets/img/local.png";
+import upworkLogo from "/assets/img/upwork.png";
 import "./WorkExperience.css";
 
 function WorkExperience() {

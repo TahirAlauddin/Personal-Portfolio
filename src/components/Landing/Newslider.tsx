@@ -1,45 +1,61 @@
 // Image Imports
-import next from "../../public/assets/img/next.png";
-import prev from "../../public/assets/img/prev.png";
+import next from "/assets/img/next.png";
+import prev from "/assets/img/prev.png";
 import React, { useState, useRef } from 'react';
 import './Newslider.css'; 
 import ImageGallery from './ImageGallery.jsx';
 
+
 const IMAGE_URLS = [
   {
     id: 4,
-    url: "/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.webp",
-    alt: "slide_image4",
-  },
-  {
-    id: 5,
-    url: "/assets/img/Portfolio/Vital AI/home.webp",
-    alt: "slide_image5",
-  },
-  {
-    id: 6,
-    url: "/assets/img/Portfolio/JewelBox/login.webp",
-    alt: "slide_image6",
-  },
-  {
-    id: 7,
-    url: "/assets/img/Portfolio/Starc Assistant/login.webp",
-    alt: "slide_image7",
-  },
-  {
-    id: 3,
-    url: "/assets/img/Portfolio/Instagnite/account-details.webp",
-    alt: "slide_image3",
-  },
-  {
-    id: 1,
-    url: "/assets/img/Portfolio/Allbooksquotes Portfolio/home-page.webp",
+    url: '/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp',
     alt: "slide_image",
   },
   {
-    id: 2,
-    url: "/assets/img/Portfolio/AspectGaming/home.webp",
+    id: 8,
+    url: '/assets/img/Portfolio/PortfolioCover/LooteEmailMarketing.webp',
     alt: "slide_image2",
+  },
+  {
+    id: 5,
+    url: '/assets/img/Portfolio/PortfolioCover/VITALAI.webp',
+    alt: "slide_image3",
+  },
+  {
+    id: 2,
+    url: '/assets/img/Portfolio/PortfolioCover/AspectGaming.webp',
+    alt: "slide_image4",
+  },
+  {
+    id: 3,
+    url: '/assets/img/Portfolio/PortfolioCover/RecipeMermiton.webp',
+    alt: "slide_image5",
+  },
+  {
+    id: 7,
+    url: '/assets/img/Portfolio/PortfolioCover/StarcAssistant.webp',
+    alt: "slide_image6",
+  },
+  {
+    id: 9,
+    url: '/assets/img/Portfolio/PortfolioCover/MoopBot.webp',
+    alt: "slide_image7",
+  },
+  {
+    id: 6,
+    url: '/assets/img/Portfolio/PortfolioCover/JewelBox.webp',
+    alt: "slide_image8",
+  },
+  {
+    id: 10,
+    url: '/assets/img/Portfolio/PortfolioCover/Instagnite.webp',
+    alt: "slide_image9",
+  },
+  {
+    id: 1,
+    url: '/assets/img/Portfolio/PortfolioCover/AllBooksQuotes.webp',
+    alt: "slide_image10",
   },
 ];
 

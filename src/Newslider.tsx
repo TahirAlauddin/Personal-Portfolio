@@ -19,8 +19,8 @@ interface ModalProps {
 }
 
 // Image Imports
-import next from "../assets/img/next.png";
-import prev from "../assets/img/prev.png";
+import next from "/assets/img/next.png";
+import prev from "/assets/img/prev.png";
 
 function Modal({ children, onClose }: ModalProps) {
   return (

@@ -1,5 +1,5 @@
 import "./Testimonial.css";
-import Testimonials from "../utils/Testimonials";
+import Testimonials from "../../utils/Testimonials";
 import { useEffect, useState } from "react";
 
 const Testimonial = () => {

@@ -1,7 +1,7 @@
 // ServicesSection.js
 import "./Services.css";
-import desktopAppLogo from "../../public/assets/img/computer.png";
-import webAppLogo from "../../public/assets/img/settings.png";
+import desktopAppLogo from "/assets/img/computer.png";
+import webAppLogo from "/assets/img/settings.png";
 
 const ServicesSection = () => {
   return (
