@@ -1,8 +1,9 @@
 import "./Footer.css";
-import {React, useState} from 'react';
+import {useState} from 'react';
+import React from "react";
 import Form from "react-bootstrap/Form";
-import facebookIcon from "../../public/assets/img/logo-facebook.png"; // Update with the path to your Facebook icon
-import linkedinIcon from "../../public/assets/img/logo-linkedin.png"; // Update with the path to your LinkedIn icon
+import facebookIcon from "/assets/img/logo-facebook.png"; // Update with the path to your Facebook icon
+import linkedinIcon from "/assets/img/logo-linkedin.png"; // Update with the path to your LinkedIn icon
 import emailjs from "emailjs-com";
 
 const Footer: React.FC = () => {
