@@ -12,9 +12,15 @@ const PortfolioDetail: React.FC = () => {
             Creating Innovative and User-Friendly Websites
           </p>
           <div className="tech-stack">
-            <span className="tech-item">Python</span>
-            <span className="tech-item">Django</span>
-            <span className="tech-item">React</span>
+            <span className="background-primary m-3 rounded-[5px] py-2 text-[16px] text-white px-5">
+              Python
+            </span>
+            <span className="background-primary m-3 rounded-[5px] py-2 text-[16px] text-white px-5">
+              Django
+            </span>
+            <span className="background-primary m-3 rounded-[5px] py-2 text-[16px] text-white px-5">
+              React
+            </span>
           </div>
         </div>
         <div className="image-wrapper">

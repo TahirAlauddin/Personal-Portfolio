@@ -12,24 +12,24 @@ function PortfolioDetailPage() {
 
     return (
       <>
-      <main>
-        <header>
-          <Navbar />
-        </header>
-        <article>
-          <HeroSection></HeroSection>
-          <PortfolioDescription></PortfolioDescription>
-          <ProjectShowcase></ProjectShowcase>
-          <MeetOurTeam></MeetOurTeam>
-          <Newsletter></Newsletter>          
-          <RelatedProjects></RelatedProjects>
-        </article>
-      </main>
-      <footer>
-      <Footer/>
-      </footer>
+        <main>
+          <header>
+            <Navbar />
+          </header>
+          <article>
+            <HeroSection></HeroSection>
+            <PortfolioDescription></PortfolioDescription>
+            <ProjectShowcase></ProjectShowcase>
+            <MeetOurTeam></MeetOurTeam>
+            <Newsletter></Newsletter>
+            <RelatedProjects></RelatedProjects>
+          </article>
+        </main>
+        <footer className="mt-[170px]">
+          <Footer />
+        </footer>
       </>
-    )
+    );
   }
   
   export default PortfolioDetailPage

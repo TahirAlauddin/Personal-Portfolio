@@ -101,8 +101,8 @@
 
 .modal-close-button {
   position: absolute;
-  top: 63px;
-  right: 204px;
+  top: 0;
+  right: 0;
   background: none;
   border: none;
   cursor: pointer;

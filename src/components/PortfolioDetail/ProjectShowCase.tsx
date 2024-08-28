@@ -67,8 +67,21 @@ const ProjectShowcase: React.FC = () => {
                     title={project.title}
                   />
                   <div className="pdf-actions">
-                    <a href={project.src} target="_blank" rel="noopener noreferrer" className="pdf-view">View Fullscreen</a>
-                    <a href={project.src} download className="pdf-download">Download PDF</a>
+                    <a
+                      href={project.src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="pdf-view color-primary"
+                    >
+                      View
+                    </a>
+                    <a
+                      href={project.src}
+                      download
+                      className="color-primary pdf-download"
+                    >
+                      Download <i className="text-[12px] text-[#ddd]">PDF</i>
+                    </a>
                   </div>
                 </div>
               )}

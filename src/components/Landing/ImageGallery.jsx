@@ -229,25 +229,27 @@ const ImageGallery = ({ projectId }) => {
   portfoliosection.style.backgroundColor = '#cbcbcb'
 
   return (
-    <div className='image-gallery-parent'>
+    <div className="image-gallery-parent">
       <div className="image-gallery">
-        <div className="large-image">
-          <img src={largeImage || project.images[0]} alt="Large" />
-        </div>
-        <div className="project-details">
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
-        </div>
-        <div className="small-images-container">
-          <div className="small-images">
-            {project.images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Small ${index + 1}`}
-                onClick={() => setLargeImage(image)}
-              />
-            ))}
+        <div className="flex">
+          {/* <div className="large-image">
+            <img src={largeImage || project.images[0]} alt="Large" />
+          </div> */}
+          <div className="basis-1/2 project-details">
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
+          </div>
+          <div className="basis-1/1 small-images-container">
+            <div className="small-images">
+              {project.images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Small ${index + 1}`}
+                  onClick={() => setLargeImage(image)}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
