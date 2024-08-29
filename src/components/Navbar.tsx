@@ -28,7 +28,7 @@ const Navbar = () => {
           }`}
         >
           <a
-            href="#home"
+            href="/"
             className={`w-full text-left menu-item ${
               selected === "home" ? "selected" : ""
             }`}

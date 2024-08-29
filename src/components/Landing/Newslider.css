@@ -92,9 +92,8 @@
   position: relative;
   background-color: white;
   padding: 20px;
-  width: 80%;
-  max-width: 1000px;
-  display: flex;
+  width: 90%;
+   display: flex;
   align-items: center;
   justify-content: center;
 }

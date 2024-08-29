@@ -111,11 +111,11 @@ export default function Carousel() {
       carouselRef.current.firstElementChild?.clientWidth! + 14; 
 
     let skip = 0;
-    let valDifference = firstImageWidth - absPositionDiff;
+    const valDifference = firstImageWidth - absPositionDiff;
 
     if (valDifference < 0) {
-      let absVal = Math.abs(valDifference);
-      let quotient = Math.floor(absVal / firstImageWidth) + 1;
+      const absVal = Math.abs(valDifference);
+      const quotient = Math.floor(absVal / firstImageWidth) + 1;
       skip = firstImageWidth * quotient;
     }
 
