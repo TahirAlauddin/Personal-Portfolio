@@ -46,37 +46,38 @@ const PortfolioDescription: React.FC = () => {
   ];
 
   return (
-    <section className="description-container">
+    <section>
       <link
         rel="stylesheet"
         type="text/css"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
       />
 
-      <div className="image-section">
-        <img
-          src={projectCover}
-          alt="Project Screenshot"
-          className="project-image"
-        />
+      <div className="md:flex items-center my-4 px-3 gap-6">
+        <div className="image-section flex-1">
+          <img
+            src={projectCover}
+            alt="Project Screenshot"
+            className="project-image"
+          />
+        </div>
+        <div className="text-section flex-1">
+          <h2 className="description-title">Project Description</h2>
+          <p className="description-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus voluptatum qui nihil vero necessitatibus assumenda
+            accusamus voluptate quisquam illum quia.
+          </p>
+          <p className="description-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ipsa
+            minima voluptates voluptate, minus a sunt deleniti exercitationem.
+            Rerum harum fugiat ab eaque? Id architecto quidem porro iusto
+            praesentium deleniti incidunt, nemo, cum assumenda, pariatur facere
+            quisquam officiis culpa? Sunt blanditiis earum nam debitis fugiat.
+            Sit quis facere unde debitis?
+          </p>
+        </div>
       </div>
-      <div className="text-section">
-        <h2 className="description-title">Project Description</h2>
-        <p className="description-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          voluptatum qui nihil vero necessitatibus assumenda accusamus voluptate
-          quisquam illum quia.
-        </p>
-        <p className="description-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ipsa
-          minima voluptates voluptate, minus a sunt deleniti exercitationem.
-          Rerum harum fugiat ab eaque? Id architecto quidem porro iusto
-          praesentium deleniti incidunt, nemo, cum assumenda, pariatur facere
-          quisquam officiis culpa? Sunt blanditiis earum nam debitis fugiat. Sit
-          quis facere unde debitis?
-        </p>
-      </div>
-
       <div className="slider-section">
         <div
           className="slider"

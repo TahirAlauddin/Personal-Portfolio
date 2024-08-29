@@ -12,10 +12,12 @@ color: var(--primary-color) !important;
 .background-primary{
   background-color: var(--primary-color) !important;
 }
-
+main{
+  max-width: 1700px;
+  margin: 0 auto;
+}
 .container {
   max-width: 124rem;
-  padding: 4rem 1rem;
   margin: 0 auto;
 }
 

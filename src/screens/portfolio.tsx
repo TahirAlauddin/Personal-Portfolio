@@ -13,7 +13,7 @@ function PortfolioDetailPage() {
     return (
       <>
         <main>
-          <header>
+          <header className="sticky top-0 bg-white z-1">
             <Navbar />
           </header>
           <article>
@@ -21,8 +21,8 @@ function PortfolioDetailPage() {
             <PortfolioDescription></PortfolioDescription>
             <ProjectShowcase></ProjectShowcase>
             <MeetOurTeam></MeetOurTeam>
-            <Newsletter></Newsletter>
             <RelatedProjects></RelatedProjects>
+            <Newsletter></Newsletter>
           </article>
         </main>
         <footer className="mt-[170px]">

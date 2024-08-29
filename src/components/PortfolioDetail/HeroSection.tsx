@@ -5,8 +5,8 @@ import React from "react";
 const PortfolioDetail: React.FC = () => {
   return (
     <section>
-      <div className="portfolio-container flex-row justify-center gap-40">
-        <div className="text-center mb-4">
+      <div className="md:flex items-center my-2 flex-row justify-center gap-20 px-6">
+        <div className="text-center mb-4 flex-1">
           <h1 className="portfolio-title">Web Development Project</h1>
           <p className="portfolio-subtitle">
             Creating Innovative and User-Friendly Websites
@@ -23,7 +23,7 @@ const PortfolioDetail: React.FC = () => {
             </span>
           </div>
         </div>
-        <div className="image-wrapper">
+        <div className="image-wrapper flex-1">
           <img
             src={projectCover}
             alt="Project Screenshot"

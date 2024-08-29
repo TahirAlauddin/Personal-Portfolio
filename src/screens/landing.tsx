@@ -12,24 +12,24 @@ function LandingPage() {
 
     return (
       <>
-      <main>
-        <header>
-          <Navbar />
-        </header>
-        <article>
-          <HeroSection />
-          <Services />
-          <About />
-          <WorkExperience />
-          <Newslider/>
-          <Testimonial />
-        </article>
-      </main>
-      <footer>
-      <Footer/>
-      </footer>
+        <main>
+          <header className="sticky top-0 bg-white z-1">
+            <Navbar />
+          </header>
+          <article>
+            <HeroSection />
+            <Services />
+            <About />
+            <WorkExperience />
+            <Newslider />
+            <Testimonial />
+          </article>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
       </>
-    )
+    );
   }
   
   export default LandingPage

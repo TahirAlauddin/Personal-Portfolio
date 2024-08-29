@@ -1,11 +1,4 @@
-.description-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4rem;
-  flex-wrap: wrap;
-}
+ 
 
 .text-section {
   flex: 1;
@@ -25,13 +18,7 @@
   color: #555;
   margin-bottom: 1rem;
 }
-
-.image-section {
-  flex: 1;
-  max-width: 35%;
-  display: flex;
-  justify-content: center;
-}
+ 
 
 .project-image {
   width: 100%;
@@ -42,9 +29,7 @@
 }
 
 @media (max-width: 768px) {
-  .description-container {
-    flex-direction: column;
-  }
+  
 
   .text-section,
   .image-section {
