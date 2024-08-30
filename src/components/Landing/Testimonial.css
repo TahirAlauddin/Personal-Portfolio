@@ -51,14 +51,10 @@
   justify-content: start;
   align-items: center;
   padding: 20px;
-  border: 3px solid #e74e4a;
-  border-radius: 20px;
   background-color: #fff;
   position: absolute;
   width: 300px;
   height: 250px;
-  background-color: white;
-  box-shadow: 1px 1px 25px 5px rgba(0, 0, 0, 0.35);
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
   transition: all 0.25s linear;
