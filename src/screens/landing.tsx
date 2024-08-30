@@ -13,7 +13,7 @@ function LandingPage() {
     return (
       <>
         <main>
-          <header className="sticky top-0 bg-white z-1">
+          <header className="mb-4 sticky top-0 bg-white z-1">
             <Navbar />
           </header>
           <article>
