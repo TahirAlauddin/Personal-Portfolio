@@ -37,13 +37,6 @@ function WorkExperience() {
           </p>
           <div className="progress-bar-wrapper">
             <div className="progress-bar-title">Python Developer</div>
-            <div className="progress-bar-container">
-              <div
-                style={{ width: "60%" }}
-                className="work-experience-progress-bar"
-                id="progress-bar"
-              ></div>
-            </div>
           </div>
         </div>
         <div className="work-experience-box">
@@ -59,16 +52,12 @@ function WorkExperience() {
           </div>
           <p>
           I have been working for Fiverr for more than two years. During this time frame I experienced and faced a lot of challenges. I learned new techniques and methods to solve business problems via SaaS and Microservice Web Applications. Surely there were some hardships along the way. But overall it was an astonishing experience.
+          Here's my profile: 
+          <br />
+          <a href="https://fiverr.com/tahiralauddin">TahirAlauddin</a>
           </p>
           <div className="progress-bar-wrapper">
             <div className="progress-bar-title">Software Development</div>
-            <div className="progress-bar-container">
-              <div
-                style={{ width: "85%" }}
-                className="work-experience-progress-bar"
-                id="progress-bar"
-              ></div>
-            </div>
           </div>
         </div>
         <div className="work-experience-box">
@@ -84,19 +73,12 @@ function WorkExperience() {
           </div>
           <p>
             The job role revolved around Web Development with a strong focus on
-            creating responsive and dynamic websites.
-            <br />
-            Read More
-          </p>
+            creating responsive and dynamic websites. Currently I'm working on a project called MSP-Dashboard.
+            Here's my profile:
+            <br /> <a href="https://upwork.com/freelancers/tahiralauddin">TahirAlauddin</a>
+            </p>
           <div className="progress-bar-wrapper">
             <div className="progress-bar-title">Web Development</div>
-            <div className="progress-bar-container">
-              <div
-                style={{ width: "66%" }}
-                className="work-experience-progress-bar"
-                id="progress-bar"
-              ></div>
-            </div>
           </div>
         </div>
       </div>
