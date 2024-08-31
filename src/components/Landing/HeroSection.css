@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   text-align: left;
-  max-width: 90%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -219,6 +218,12 @@
 @media (max-width: 768px) {
   .landing-container {
     display: block;
+  }
+  .landing-parent{
+    margin-top: 0;
+  }
+  .profile-image{
+    padding: 0;
   }
   /* Phones */
   .title {

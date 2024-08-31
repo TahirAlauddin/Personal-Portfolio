@@ -62,3 +62,10 @@ main{
     animation: logo-spin infinite 20s linear;
   }
 }
+
+@media (max-width: 768px) {
+  main{
+    width: 100%;
+    padding: 12px;
+  }
+}

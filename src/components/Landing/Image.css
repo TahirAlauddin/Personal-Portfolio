@@ -111,7 +111,10 @@
   .large-image img {
     max-width: 100%;
   }
-
+  .small-images{
+    display: flex;
+    overflow-x: auto;
+  }
   .small-images img {
     width: 120px;
     height: 80px;

@@ -18,14 +18,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="sm:max-w-[90%] container">
+      <div className="sm:max-w-[90%] container px-0">
         <div className="logo">
           <img src={myLogo} alt="Tech Hoseki" />
         </div>
         <div
-          className={`menu mt-[52px] md:mt-0 pl-[23px] ${
-            menuOpen ? "open" : ""
-          }`}
+          className={`menu mt-[0] md:mt-0 pl-[23px] ${menuOpen ? "open" : ""}`}
         >
           <a
             href="/"

@@ -219,14 +219,14 @@ const ImageGallery = ({ projectId }) => {
   return (
     <div className="image-gallery-parent">
       <div className="image-gallery">
-        <div className="flex">
+        <div className="sm:flex">
           {/* <div className="large-image">
             <img src={largeImage || project.images[0]} alt="Large" />
           </div> */}
           <div className="basis-1/2 project-details">
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-            <Link to="/portfolio" className="text-left block">
+            <Link to={`/portfolio/${project?.id}`} className="text-left block">
               Learn More
             </Link>
           </div>
