@@ -5,7 +5,7 @@ import React from "react";
 const PortfolioDetail: React.FC = () => {
   return (
     <section>
-      <div className="md:flex items-center my-2 flex-row justify-center gap-20 px-6">
+      <div className="md:flex items-center  my-2 flex-row justify-center gap-20 max-w-[90%] mx-[auto]">
         <div className="text-center mb-4 flex-1">
           <h1 className="portfolio-title">Web Development Project</h1>
           <p className="portfolio-subtitle">

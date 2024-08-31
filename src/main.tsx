@@ -7,6 +7,7 @@ import "./index.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import ErrorPage from "./error-page.tsx";
 import PortfolioDetailPage from "./screens/portfolio.tsx";
+import { SinglePortFolio } from "./screens/portFolio.details.tsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
   {
     path: "/portfolio",
     element: <PortfolioDetailPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/portfolio/:id",
+    element: <SinglePortFolio />,
     errorElement: <ErrorPage />,
   },
 ]);

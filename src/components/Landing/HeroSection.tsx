@@ -46,8 +46,8 @@ function HeroSection() {
             </a>
           </div>
         </div>
-        <div className="image-container flex-1">
-          <div className="image-wrapper">
+        <div className="bg-white image-container flex-1">
+          <div className="bg-white image-wrapper">
             <div className="profile-image-bg"></div>
             <img
               srcSet={`${profileImageS} 600w, ${profileImageM} 1200w, ${profileImage} 2000w`}
