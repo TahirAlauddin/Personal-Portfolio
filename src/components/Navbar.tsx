@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="sm:max-w-[90%] container px-0">
+      <div className="container px-0">
         <div className="logo">
           <img src={myLogo} alt="Tech Hoseki" />
         </div>

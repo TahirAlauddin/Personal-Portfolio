@@ -3,6 +3,7 @@
       {
         "id": 1,
         "title": "All Book Quotes",
+        "tags": ["Django", "NGINX", "Docker", "Python", "DigitalOcean"],
         "subtitle": "A Directory of all the books",
         "description": "AllBooksQuotes is a Web application made with Django which works with Amazon Affiliate Program and Google Adsense. It is a community for enthusiast Book Readers to read over 50,000 quotes from over 11,000 books from different categories.",
         "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
