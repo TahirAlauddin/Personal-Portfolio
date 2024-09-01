@@ -11,7 +11,7 @@ const PortfolioDetail: React.FC = ({ project }) => {
             Creating Innovative and User-Friendly Websites
           </p>
           <div className="tech-stack">
-            {project?.tags?.map((tag) => (
+            {project?.tags?.map((tag: string) => (
               <span
                 key={tag}
                 className="background-primary m-3 rounded-[5px] py-1 text-[12px] min-w-[60px] text-white px-2"
