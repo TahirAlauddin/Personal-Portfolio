@@ -3,7 +3,6 @@ import { projects } from "../utils/data.json";
 import Navbar from "../components/Navbar";
 export const SinglePortFolio = () => {
   const params = useParams();
-  console.log(projects);
   const item = projects?.find((x) => x?.id?.toString() === params?.id);
 
   return (

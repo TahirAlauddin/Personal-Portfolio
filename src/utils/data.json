@@ -5,6 +5,7 @@
         "title": "All Book Quotes",
         "subtitle": "A Directory of all the books",
         "description": "AllBooksQuotes is a Web application made with Django which works with Amazon Affiliate Program and Google Adsense. It is a community for enthusiast Book Readers to read over 50,000 quotes from over 11,000 books from different categories.",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "images": [
           "/assets/img/Portfolio/Allbooksquotes Portfolio/home-page.webp",
           "/assets/img/Portfolio/Allbooksquotes Portfolio/quotes-page-related-page.webp",
@@ -17,6 +18,7 @@
         "id": 2,
         "title": "AspectGaming",
         "subtitle": "Your All in One Gaming Software",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "tags": ["Django", "NGINX", "Docker", "Python", "DigitalOcean"],
         "description": "Aspect Gaming Tweaks is a software I made for a Saudi Community, made of gaming enthusiast. The job of the software is to make the windows delete any restricting features that come in the way of gaming.The software run a bunch of bat files and sets reg for enhancing the user experience on their gaming PCs. The idea is to make the PC efficient for specific users. It also implements Licensing through AWS.",
         "images": [
@@ -33,6 +35,7 @@
         "id": 3,
         "title": "Recipito",
         "subtitle": "All your Recipes at one place",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "tags": ["Django", "NGINX", "Docker", "Python", "DigitalOcean"],
         "description": "Recipito is a robust recipe website designed to cater to food enthusiasts just like marmiton.org. Developed using Python, Django, HTML, CSS and JavaScript, this platform empowers users to create and share their culinary masterpieces, complete with detailed ingredients and utensil models.",
         "images": [
@@ -48,8 +51,19 @@
       {
         "id": 4,
         "title": "Konnected Reverse Raffle",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "subtitle": "A fun way to do fund-raising",
-        "tags": ["CSS", "Django", "Python", "Git", "HTML", "PyQt", "Flask", "Web Application", "Desktop Application"],
+        "tags": [
+          "CSS",
+          "Django",
+          "Python",
+          "Git",
+          "HTML",
+          "PyQt",
+          "Flask",
+          "Web Application",
+          "Desktop Application"
+        ],
         "description": "A fun to play Game with friends",
         "images": [
           "/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.webp",
@@ -81,7 +95,15 @@
         "id": 5,
         "title": "Vital AI",
         "subtitle": "HealthCare Management System",
-        "tags": ["Python", "PyQt", "ChatGPT", "API", "Desktop Application", "Git"],
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
+        "tags": [
+          "Python",
+          "PyQt",
+          "ChatGPT",
+          "API",
+          "Desktop Application",
+          "Git"
+        ],
         "description": "An AI powered Medical Software for managing patients, appointments and doctors along with the option to diagnose the symptoms of the patient using OpenAI model GPT3. It's developed with Python and PyQt5.",
         "images": [
           "/assets/img/Portfolio/Vital AI/home.webp",
@@ -97,6 +119,7 @@
         "id": 6,
         "title": "Jewel Box",
         "tags": ["Django", "CSS", "Python", "HTML", "JavaScript"],
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "description": "A Jewelery Store Web App",
         "images": [
           "/assets/img/Portfolio/JewelBox/login.webp",
@@ -114,6 +137,7 @@
         "id": 7,
         "title": "Starc Assistant",
         "subtitle": "Chatbot for manufacturing industries",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "tags": ["Django", "CSS", "Python", "HTML", "JavaScript"],
         "description": "Starc Assistant is a robust desktop server application designed to augment the support mechanism for Gentilini Power-Train's employees.",
         "images": [
@@ -133,7 +157,17 @@
         "id": 8,
         "title": "Loote",
         "subtitle": "Mass Email Sending App",
-        "tags": ["Web Development", "Django", "Git", "Desktop Application", "Web Application", "API", "Microsoft Azure", "Python"],
+        "tags": [
+          "Web Development",
+          "Django",
+          "Git",
+          "Desktop Application",
+          "Web Application",
+          "API",
+          "Microsoft Azure",
+          "Python"
+        ],
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "description": "Loote Mass Email Sender is a desktop application that sends bulk emails to clients using Microsoft Azure Graph API. A user can also choose from templates saved locally. It gets the analytics like click, open and bounce rate from the API hosted on cloud made with Django Server.",
         "images": [
           "/assets/img/Portfolio/Starc Assistant/login.webp",
@@ -151,6 +185,7 @@
       {
         "id": 9,
         "title": "Moop Bot",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "subtitle": "A personalized AI Powered Assistant like Siri",
         "tags": ["Chatbot", "PyQt", "Python", "ElevenLabs", "OpenAI API"],
         "description": "Moop Bot is an AI powered assistant designed to respond to queries and assist the user. It is integrated with ElevenLabs TTS API and OpenAI GPT-3.5-turbo.",
@@ -161,6 +196,7 @@
       },
       {
         "id": 10,
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "title": "Instagnite",
         "subtitle": "Instagram Tools at one place",
         "description": "Instangite is a dynamic desktop application crafted using Python and PyQt5, designed specifically for efficient data scraping and automated interactions on Instagram. This versatile tool expertly navigates through Instagram's platform, extracting valuable data with precision, while also functioning as an intelligent bot for seamless user engagement.",

@@ -226,7 +226,10 @@ const ImageGallery = ({ projectId }) => {
           <div className="basis-1/2 project-details">
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-            <Link to={`/portfolio/${project?.id}`} className="text-left block">
+            <Link
+              to={`/portfolio/?id=${project?.id}`}
+              className="text-left block"
+            >
               Learn More
             </Link>
           </div>

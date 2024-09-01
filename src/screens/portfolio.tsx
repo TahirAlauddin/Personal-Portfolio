@@ -7,30 +7,35 @@ import ProjectShowcase from '../components/PortfolioDetail/ProjectShowCase'
 import MeetOurTeam from '../components/PortfolioDetail/MeetOurTeam'
 import Newsletter from '../components/PortfolioDetail/NewsLetter'
 import RelatedProjects from '../components/PortfolioDetail/RelatedProjects'
+import { useSearchParams } from "react-router-dom";
+import { projects } from "../utils/data.json";
 
-function PortfolioDetailPage() { 
+function PortfolioDetailPage() {
+  const [searchParams] = useSearchParams();
+  const id = searchParams.get("id");
+  const project = projects?.find((x) => x?.id?.toString() === id);
 
-    return (
-      <>
-        <main>
-          <header className="mb-4 sticky top-0 bg-white z-1">
-            <Navbar />
-          </header>
-          <article>
-            <HeroSection></HeroSection>
-            <PortfolioDescription></PortfolioDescription>
-            <ProjectShowcase></ProjectShowcase>
-            <MeetOurTeam></MeetOurTeam>
-            <RelatedProjects></RelatedProjects>
-            <Newsletter></Newsletter>
-          </article>
-        </main>
-        <footer className="mt-[170px]">
-          <Footer />
-        </footer>
-      </>
-    );
-  }
+  return (
+    <>
+      <main>
+        <header className="mb-4 sticky top-0 bg-white z-1">
+          <Navbar />
+        </header>
+        <article>
+          <HeroSection project={project}></HeroSection>
+          <PortfolioDescription project={project}></PortfolioDescription>
+          <ProjectShowcase></ProjectShowcase>
+          <MeetOurTeam></MeetOurTeam>
+          <RelatedProjects></RelatedProjects>
+          <Newsletter></Newsletter>
+        </article>
+      </main>
+      <footer className="mt-[170px]">
+        <Footer />
+      </footer>
+    </>
+  );
+}
   
   export default PortfolioDetailPage
   

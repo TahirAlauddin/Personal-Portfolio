@@ -1,8 +1,7 @@
-import projectCover from "/assets/img/Portfolio/PortfolioCover/MoopBot.webp";
 import "./HeroSection.css";
 import React from "react";
 
-const PortfolioDetail: React.FC = () => {
+const PortfolioDetail: React.FC = ({ project }) => {
   return (
     <section>
       <div className="md:flex items-center  my-2 flex-row justify-center gap-20">
@@ -12,20 +11,19 @@ const PortfolioDetail: React.FC = () => {
             Creating Innovative and User-Friendly Websites
           </p>
           <div className="tech-stack">
-            <span className="background-primary m-3 rounded-[5px] py-2 text-[16px] text-white px-5">
-              Python
-            </span>
-            <span className="background-primary m-3 rounded-[5px] py-2 text-[16px] text-white px-5">
-              Django
-            </span>
-            <span className="background-primary m-3 rounded-[5px] py-2 text-[16px] text-white px-5">
-              React
-            </span>
+            {project?.tags?.map((tag) => (
+              <span
+                key={tag}
+                className="background-primary m-3 rounded-[5px] py-1 text-[12px] min-w-[60px] text-white px-2"
+              >
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
         <div className="image-wrapper flex-1">
           <img
-            src={projectCover}
+            src={project?.coverImage}
             alt="Project Screenshot"
             className="project-cover"
           />

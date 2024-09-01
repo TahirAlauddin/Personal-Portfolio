@@ -2,7 +2,7 @@ import React from "react";
 import projectCover from "/assets/img/Portfolio/PortfolioCover/MoopBot.webp";
 import "./ProjectDescription.css";
 
-const PortfolioDescription: React.FC = () => {
+const PortfolioDescription: React.FC = ({ project }) => {
   const techLogos = [
     "devicon-django-plain colored",
     "devicon-react-plain colored",
@@ -56,7 +56,7 @@ const PortfolioDescription: React.FC = () => {
       <div className="md:flex items-center my-4 px-3 gap-6">
         <div className="image-section flex-1">
           <img
-            src={projectCover}
+            src={project?.images?.[0] ?? projectCover}
             alt="Project Screenshot"
             className="project-image"
           />
