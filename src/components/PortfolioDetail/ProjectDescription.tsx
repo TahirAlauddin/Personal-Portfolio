@@ -53,6 +53,7 @@ const PortfolioDescription: React.FC = ({ project }) => {
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
       />
 
+      <h2 className="description-title text-center mt-20">Project Description</h2>
       <div className="md:flex items-center my-4 px-3 gap-6">
         <div className="image-section flex-1">
           <img
@@ -62,21 +63,16 @@ const PortfolioDescription: React.FC = ({ project }) => {
           />
         </div>
         <div className="text-section flex-1">
-          <h2 className="description-title">Project Description</h2>
-          <p className="description-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus voluptatum qui nihil vero necessitatibus assumenda
-            accusamus voluptate quisquam illum quia.
-          </p>
-          <p className="description-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ipsa
-            minima voluptates voluptate, minus a sunt deleniti exercitationem.
-            Rerum harum fugiat ab eaque? Id architecto quidem porro iusto
-            praesentium deleniti incidunt, nemo, cum assumenda, pariatur facere
-            quisquam officiis culpa? Sunt blanditiis earum nam debitis fugiat.
-            Sit quis facere unde debitis?
-          </p>
-        </div>
+        {project.description.split(' ').length > 40 ? (
+          project.description.split(/(?<=\.|\!|\?)\s+/).map((paragraph, index) => (
+            <p key={index} className="description-text mb-4">
+              {paragraph}
+            </p>
+          ))
+        ) : (
+          <p className="description-text">{project.description}</p>
+        )}
+      </div>
       </div>
       <div className="slider-section">
         <div

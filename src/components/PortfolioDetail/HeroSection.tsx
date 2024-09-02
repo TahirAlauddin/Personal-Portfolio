@@ -3,7 +3,7 @@ import React from "react";
 
 const PortfolioDetail: React.FC = ({ project }) => {
   return (
-    <section>
+    <section id="hero-section">
       <div className="md:flex items-center  my-2 flex-row justify-center gap-20">
         <div className="text-center mb-4 flex-1">
           <h1 className="portfolio-title">Web Development Project</h1>
