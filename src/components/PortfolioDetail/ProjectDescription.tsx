@@ -3,7 +3,6 @@ import projectCover from "/assets/img/Portfolio/PortfolioCover/MoopBot.webp";
 import "./ProjectDescription.css";
 
 const PortfolioDescription: React.FC = ({ project }) => {
-
   const techLogos = [
     "devicon-django-plain colored",
     "devicon-react-plain colored",

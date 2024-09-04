@@ -11,8 +11,8 @@ function Portfolio() {
   const items: {[key: string]: string} = {
     'konnected': '/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.png',
     'loote': '/assets/img/Portfolio/PortfolioCover/LooteEmailMarketing.png',
-    'vital-ai': '/assets/img/Portfolio/PortfolioCover/VITALAI.png',
-    'aspect-gaming': '/assets/img/Portfolio/PortfolioCover/AspectGaming.png',
+    'vital-ai': '/assets/img/Portfolio/PortfolioCover/.png',
+    'aspect-gaming': '/assets/img/Portfolio/PortfolioCover/.png',
     'recipito': '/assets/img/Portfolio/PortfolioCover/RecipeMermiton.png',
     'starc assistant': '/assets/img/Portfolio/PortfolioCover/StarcAssistant.png',
     'moop bot': '/assets/img/Portfolio/PortfolioCover/MoopBot.png',

@@ -6,7 +6,7 @@
         "tags": ["Django", "NGINX", "Docker", "Python", "DigitalOcean"],
         "subtitle": "A Directory of all the books",
         "description": "AllBooksQuotes is a Web application made with Django which works with Amazon Affiliate Program and Google Adsense. It is a community for enthusiast Book Readers to read over 50,000 quotes from over 11,000 books from different categories.",
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/AllBooksQuotes.webp",
         "images": [
           "/assets/img/Portfolio/Allbooksquotes Portfolio/home-page.webp",
           "/assets/img/Portfolio/Allbooksquotes Portfolio/quotes-page-related-page.webp",
@@ -19,7 +19,7 @@
         "id": 2,
         "title": "AspectGaming",
         "subtitle": "Your All in One Gaming Software",
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/AspectGaming.webp",
         "tags": ["Django", "NGINX", "Docker", "Python", "DigitalOcean"],
         "description": "Aspect Gaming Tweaks is a software I made for a Saudi Community, made of gaming enthusiast. The job of the software is to make the windows delete any restricting features that come in the way of gaming.The software run a bunch of bat files and sets reg for enhancing the user experience on their gaming PCs. The idea is to make the PC efficient for specific users. It also implements Licensing through AWS.",
         "images": [
@@ -36,7 +36,7 @@
         "id": 3,
         "title": "Recipito",
         "subtitle": "All your Recipes at one place",
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/RecipeMermiton.webp",
         "tags": ["Django", "NGINX", "Docker", "Python", "DigitalOcean"],
         "description": "Recipito is a robust recipe website designed to cater to food enthusiasts just like marmiton.org. Developed using Python, Django, HTML, CSS and JavaScript, this platform empowers users to create and share their culinary masterpieces, complete with detailed ingredients and utensil models.",
         "images": [
@@ -65,7 +65,7 @@
           "Web Application",
           "Desktop Application"
         ],
-        "description": "A fun to play Game with friends",
+        "description": "I'm the creator behind 'Konnected Reverse Raffle', a dynamic web and desktop application developed using Python, Django, HTML, CSS, and PyQt5 For MacOS, a separate server was created in Flask. I successfully delivered this project within a two-month contract, handling both the backend and frontend development independently. This versatile application serves event organizers by simplifying event management. Users can download and install the software as a desktop application, transforming their computer into a dedicated event management tool.",
         "images": [
           "/assets/img/Portfolio/KonnectedReverseRaffle/Pics/krr-admin-dashboard.webp",
           "/assets/img/Portfolio/KonnectedReverseRaffle/Pics/invalid-license-key.webp",
@@ -96,7 +96,7 @@
         "id": 5,
         "title": "Vital AI",
         "subtitle": "HealthCare Management System",
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/VITALAI.webp",
         "tags": [
           "Python",
           "PyQt",
@@ -120,7 +120,7 @@
         "id": 6,
         "title": "Jewel Box",
         "tags": ["Django", "CSS", "Python", "HTML", "JavaScript"],
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/JewelBox.webp",
         "description": "A Jewelery Store Web App",
         "images": [
           "/assets/img/Portfolio/JewelBox/login.webp",
@@ -138,7 +138,7 @@
         "id": 7,
         "title": "Starc Assistant",
         "subtitle": "Chatbot for manufacturing industries",
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/StarcAssistant.webp",
         "tags": ["Django", "CSS", "Python", "HTML", "JavaScript"],
         "description": "Starc Assistant is a robust desktop server application designed to augment the support mechanism for Gentilini Power-Train's employees.",
         "images": [
@@ -168,19 +168,14 @@
           "Microsoft Azure",
           "Python"
         ],
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/LooteEmailMarketing.webp",
         "description": "Loote Mass Email Sender is a desktop application that sends bulk emails to clients using Microsoft Azure Graph API. A user can also choose from templates saved locally. It gets the analytics like click, open and bounce rate from the API hosted on cloud made with Django Server.",
         "images": [
-          "/assets/img/Portfolio/Starc Assistant/login.webp",
-          "/assets/img/Portfolio/Starc Assistant/home.webp",
-          "/assets/img/Portfolio/Starc Assistant/chatbot-interface.webp",
-          "/assets/img/Portfolio/Starc Assistant/machines-detail.webp",
-          "/assets/img/Portfolio/Starc Assistant/machines-list.webp",
-          "/assets/img/Portfolio/Starc Assistant/previous-page-topics.webp",
-          "/assets/img/Portfolio/Starc Assistant/topic-detail-page.webp",
-          "/assets/img/Portfolio/Starc Assistant/tornitura-bot.webp",
-          "/assets/img/Portfolio/Starc Assistant/training-list-admin.webp",
-          "/assets/img/Portfolio/Starc Assistant/welcome.webp"
+          "/assets/img/Portfolio/Loote/Home.webp",
+          "/assets/img/Portfolio/Loote/Send Emails.webp",
+          "/assets/img/Portfolio/Loote/Import List Page.webp",
+          "/assets/img/Portfolio/Loote/Scheduled Page.webp",
+          "/assets/img/Portfolio/Loote/Templates Page.webp"  
         ]
       },
       {

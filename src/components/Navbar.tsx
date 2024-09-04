@@ -44,7 +44,7 @@ const Navbar = () => {
             About
           </a>
           <a
-            href="/portfolio"
+            href="/portfolio/?id=1"
             className={`w-full text-left menu-item ${
               selected === "portfolio" ? "selected" : ""
             }`}

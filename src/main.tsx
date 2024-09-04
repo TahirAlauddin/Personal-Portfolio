@@ -18,12 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/portfolio",
     element: <PortfolioDetailPage />,
-    errorElement: <ErrorPage />,
   },
   {
     path: "/portfolio/:id",
     element: <SinglePortFolio />,
-    errorElement: <ErrorPage />,
   },
 ]);
 

@@ -1,0 +1,20 @@
+{
+    "team": [
+      {
+        "name": "Ali Abdullah",
+        "role": "Frontend Developer",
+        "picture": "/ali/ali.png"
+      },
+      {
+        "name": "Tahir Alauddin",
+        "role": "Backend Developer/Team Lead",
+        "picture": "/tahir/tahir-zoomed.webp"
+      },
+      {
+        "name": "Abid Ali",
+        "role": "Frontend Developer",
+        "picture": "/abid/abid.webp"
+      }
+
+    ]
+  }

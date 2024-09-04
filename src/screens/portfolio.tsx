@@ -24,9 +24,9 @@ function PortfolioDetailPage() {
         <article>
           <HeroSection project={project}></HeroSection>
           <PortfolioDescription project={project}></PortfolioDescription>
-          <ProjectShowcase></ProjectShowcase>
+          <ProjectShowcase project={project}></ProjectShowcase>
           <MeetOurTeam></MeetOurTeam>
-          <RelatedProjects></RelatedProjects>
+          <RelatedProjects currentProjectId={project?.id}></RelatedProjects>
           <Newsletter></Newsletter>
         </article>
       </main>

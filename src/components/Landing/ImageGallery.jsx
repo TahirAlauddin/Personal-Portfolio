@@ -165,16 +165,11 @@ const ImageGallery = ({ projectId }) => {
       description:
         " Loote Mass Email Sender is a desktop application that sends bulk emails to clients using Microsoft Azure Graph API. A user can also choose from templates saved locally. It gets the analytics like click, open and bounce rate from the API hosted on cloud made with Django Server.",
       images: [
-        "/assets/img/Portfolio/Starc Assistant/login.webp",
-        "/assets/img/Portfolio/Starc Assistant/home.webp",
-        "/assets/img/Portfolio/Starc Assistant/chatbot-interface.webp",
-        "/assets/img/Portfolio/Starc Assistant/machines-detail.webp",
-        "/assets/img/Portfolio/Starc Assistant/machines-list.webp",
-        "/assets/img/Portfolio/Starc Assistant/previous-page-topics.webp",
-        "/assets/img/Portfolio/Starc Assistant/topic-detail-page.webp",
-        "/assets/img/Portfolio/Starc Assistant/tornitura-bot.webp",
-        "/assets/img/Portfolio/Starc Assistant/training-list-admin.webp",
-        "/assets/img/Portfolio/Starc Assistant/welcome.webp",
+        "/assets/img/Portfolio/Loote/Home.webp",
+        "/assets/img/Portfolio/Loote/Send Emails.webp",
+        "/assets/img/Portfolio/Loote/Import List Page.webp",
+        "/assets/img/Portfolio/Loote/Scheduled Page.webp",
+        "/assets/img/Portfolio/Loote/Templates Page.webp",
       ],
     },
     {
