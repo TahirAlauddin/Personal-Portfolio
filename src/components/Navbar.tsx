@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="container px-0">
+      <div className="flex justify-between w-full px-0">
         <div className="logo">
           <img src={myLogo} alt="Tech Hoseki" />
         </div>

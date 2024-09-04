@@ -229,6 +229,7 @@ const ImageGallery = ({ projectId }) => {
             <Link
               to={`/portfolio/?id=${project?.id}`}
               className="text-left block"
+              onClick={() => (document.body.style.overflow = "inherit")}
             >
               Learn More
             </Link>

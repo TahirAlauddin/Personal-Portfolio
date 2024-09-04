@@ -6,10 +6,8 @@ const PortfolioDetail: React.FC = ({ project }) => {
     <section>
       <div className="md:flex items-center  my-2 flex-row justify-center gap-20">
         <div className="text-center mb-4 flex-1">
-          <h1 className="portfolio-title">Web Development Project</h1>
-          <p className="portfolio-subtitle">
-            Creating Innovative and User-Friendly Websites
-          </p>
+          <h1 className="portfolio-title">{project?.title}</h1>
+          <p className="portfolio-subtitle">{project?.subtitle}</p>
           <div className="tech-stack">
             {project?.tags?.map((tag: string) => (
               <span

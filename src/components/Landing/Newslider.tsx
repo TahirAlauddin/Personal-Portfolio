@@ -85,7 +85,8 @@ export default function Carousel() {
   const handleImageClick = (id: number) => {
     setSelectedProject(id);
     setShowModal(true);
-    console.log('Image clicked:', id);
+    console.log("Image clicked:", id);
+    document.body.style.overflow = "hidden";
   };
 
   const [isDragStart, setIsDragStart] = useState(false);
@@ -97,7 +98,9 @@ export default function Carousel() {
 
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  const dragStart = (e: React.MouseEvent<HTMLImageElement> & React.TouchEvent<HTMLImageElement>) => {
+  const dragStart = (
+    e: React.MouseEvent<HTMLImageElement> & React.TouchEvent<HTMLImageElement>
+  ) => {
     if (isMoving) return;
 
     setIsDragStart(true);
@@ -105,7 +108,9 @@ export default function Carousel() {
     setPrevScrollLeft(carouselRef.current?.scrollLeft || 0);
   };
 
-  const dragging = (e: React.MouseEvent<HTMLImageElement> & React.TouchEvent<HTMLImageElement>) => {
+  const dragging = (
+    e: React.MouseEvent<HTMLImageElement> & React.TouchEvent<HTMLImageElement>
+  ) => {
     if (!isDragStart || isMoving) return;
 
     setIsDragging(true);
@@ -143,7 +148,8 @@ export default function Carousel() {
 
     const absPositionDiff = Math.abs(positionDiff);
 
-    const firstImageWidth = carouselRef.current.firstElementChild?.clientWidth! + 14;
+    const firstImageWidth =
+      carouselRef.current.firstElementChild?.clientWidth! + 14;
 
     let skip = 0;
     const valDifference = firstImageWidth - absPositionDiff;
@@ -160,7 +166,7 @@ export default function Carousel() {
           absPositionDiff > firstImageWidth / 3
             ? carouselRef.current.scrollLeft + skip + valDifference
             : carouselRef.current.scrollLeft - absPositionDiff,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     } else {
       carouselRef.current.scrollTo({
@@ -168,7 +174,7 @@ export default function Carousel() {
           absPositionDiff > firstImageWidth / 3
             ? carouselRef.current.scrollLeft - skip - valDifference
             : carouselRef.current.scrollLeft + absPositionDiff,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
 
@@ -180,17 +186,18 @@ export default function Carousel() {
   const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!carouselRef.current) return;
 
-    const firstImageWidth = carouselRef.current.firstElementChild?.clientWidth! + 14;
+    const firstImageWidth =
+      carouselRef.current.firstElementChild?.clientWidth! + 14;
 
-    if (e.currentTarget.id === 'btn-left') {
+    if (e.currentTarget.id === "btn-left") {
       carouselRef.current.scrollTo({
         left: carouselRef.current.scrollLeft - firstImageWidth,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
-    } else if (e.currentTarget.id === 'btn-right') {
+    } else if (e.currentTarget.id === "btn-right") {
       carouselRef.current.scrollTo({
         left: carouselRef.current.scrollLeft + firstImageWidth,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -204,7 +211,7 @@ export default function Carousel() {
 
     carouselRef.current.scrollTo({
       left: carouselRef.current.scrollLeft + scrollAmount,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -250,11 +257,15 @@ export default function Carousel() {
               id="btn-left"
               onClick={handleButtonClick}
             >
-              <img src={prev} style={{ height: "3rem", width: "auto" }} alt="Previous" />
+              <img
+                src={prev}
+                style={{ height: "3rem", width: "auto" }}
+                alt="Previous"
+              />
             </button>
 
             <div
-              className={`carousel-container ${isDragging ? 'dragging' : ''}`}
+              className={`carousel-container ${isDragging ? "dragging" : ""}`}
               ref={carouselRef}
               onMouseDown={dragStart}
               onMouseMove={dragging}
@@ -270,7 +281,7 @@ export default function Carousel() {
                   draggable={false}
                   loading="lazy"
                   onClick={() => handleImageClick(image.id)}
-                  style={{ cursor: 'grab', width: '562px', height: '238px' }}
+                  style={{ cursor: "grab", width: "562px", height: "238px" }}
                 />
               ))}
             </div>
@@ -281,18 +292,25 @@ export default function Carousel() {
               id="btn-right"
               onClick={handleButtonClick}
             >
-              <img src={next} style={{ height: "3rem", width: "auto" }} alt="Next" />
+              <img
+                src={next}
+                style={{ height: "3rem", width: "auto" }}
+                alt="Next"
+              />
             </button>
           </div>
         </div>
 
         {showModal && (
-          <Modal onClose={() => {
-            let portfoliosection = document.getElementById('portfolio')
-            portfoliosection!.style.backgroundColor = '#fff'
-            console.log("CLOSE MODAL")
-            setShowModal(false)
-            }}>
+          <Modal
+            onClose={() => {
+              let portfoliosection = document.getElementById("portfolio");
+              portfoliosection!.style.backgroundColor = "#fff";
+              console.log("CLOSE MODAL");
+              setShowModal(false);
+              document.body.style.overflow = "inherit";
+            }}
+          >
             <ImageGallery projectId={selectedProject} />
           </Modal>
         )}
