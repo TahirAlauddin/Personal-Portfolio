@@ -1,3 +1,8 @@
+.portfolio-heading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 .slider-parent {
   height: 400px;
   max-width: 100%;

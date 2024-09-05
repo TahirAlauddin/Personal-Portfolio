@@ -199,7 +199,7 @@ export default function Carousel() {
 
   return (
     <div id="portfolio">
-      <h1 style={{ paddingTop: "20px" }}>My Portfolio</h1>
+      <h1 className='heading' style={{ paddingTop: "20px" }}>My Portfolio</h1>
       <h3>Get to know about my latest projects here</h3>
       <div className="slider-parent">
         <div
