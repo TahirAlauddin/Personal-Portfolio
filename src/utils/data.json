@@ -52,18 +52,10 @@
       {
         "id": 4,
         "title": "Konnected Reverse Raffle",
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "subtitle": "A fun way to do fund-raising",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "tags": [
-          "CSS",
-          "Django",
-          "Python",
-          "Git",
-          "HTML",
-          "PyQt",
-          "Flask",
-          "Web Application",
-          "Desktop Application"
+          "CSS", "Django", "Python", "Git", "HTML", "PyQt", "Flask", "Web Application", "Desktop Application"
         ],
         "description": "I'm the creator behind 'Konnected Reverse Raffle', a dynamic web and desktop application developed using Python, Django, HTML, CSS, and PyQt5 For MacOS, a separate server was created in Flask. I successfully delivered this project within a two-month contract, handling both the backend and frontend development independently. This versatile application serves event organizers by simplifying event management. Users can download and install the software as a desktop application, transforming their computer into a dedicated event management tool.",
         "images": [
@@ -119,8 +111,9 @@
       {
         "id": 6,
         "title": "Jewel Box",
-        "tags": ["Django", "CSS", "Python", "HTML", "JavaScript"],
+        "subtitle": "Jewel Box",
         "coverImage": "/assets/img/Portfolio/PortfolioCover/JewelBox.webp",
+        "tags": ["Django", "CSS", "Python", "HTML", "JavaScript"],
         "description": "A Jewelery Store Web App",
         "images": [
           "/assets/img/Portfolio/JewelBox/login.webp",
@@ -158,17 +151,8 @@
         "id": 8,
         "title": "Loote",
         "subtitle": "Mass Email Sending App",
-        "tags": [
-          "Web Development",
-          "Django",
-          "Git",
-          "Desktop Application",
-          "Web Application",
-          "API",
-          "Microsoft Azure",
-          "Python"
-        ],
         "coverImage": "/assets/img/Portfolio/PortfolioCover/LooteEmailMarketing.webp",
+        "tags": ["Web Development", "Django", "Git", "Desktop Application", "Web Application", "API", "Microsoft Azure", "Python"],
         "description": "Loote Mass Email Sender is a desktop application that sends bulk emails to clients using Microsoft Azure Graph API. A user can also choose from templates saved locally. It gets the analytics like click, open and bounce rate from the API hosted on cloud made with Django Server.",
         "images": [
           "/assets/img/Portfolio/Loote/Home.webp",
@@ -181,8 +165,8 @@
       {
         "id": 9,
         "title": "Moop Bot",
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "subtitle": "A personalized AI Powered Assistant like Siri",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "tags": ["Chatbot", "PyQt", "Python", "ElevenLabs", "OpenAI API"],
         "description": "Moop Bot is an AI powered assistant designed to respond to queries and assist the user. It is integrated with ElevenLabs TTS API and OpenAI GPT-3.5-turbo.",
         "images": [
@@ -192,9 +176,10 @@
       },
       {
         "id": 10,
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "title": "Instagnite",
         "subtitle": "Instagram Tools at one place",
+        "tags": ["Chatbot", "PyQt", "Python"],
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
         "description": "Instangite is a dynamic desktop application crafted using Python and PyQt5, designed specifically for efficient data scraping and automated interactions on Instagram. This versatile tool expertly navigates through Instagram's platform, extracting valuable data with precision, while also functioning as an intelligent bot for seamless user engagement.",
         "images": [
           "/assets/img/Portfolio/Instagnite/account-details.webp",

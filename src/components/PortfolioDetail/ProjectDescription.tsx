@@ -1,8 +1,11 @@
 import React from "react";
 import projectCover from "/assets/img/Portfolio/PortfolioCover/MoopBot.webp";
 import "./ProjectDescription.css";
+import { ProjectsInterface } from '../../screens/interfaces'
 
-const PortfolioDescription: React.FC = ({ project }) => {
+
+const PortfolioDescription = ({ project }: { project: ProjectsInterface }) => {
+    
   const techLogos = [
     "devicon-django-plain colored",
     "devicon-react-plain colored",
@@ -46,7 +49,7 @@ const PortfolioDescription: React.FC = ({ project }) => {
   ];
 
   return (
-    <section>
+    <section id="description" className="mt-20">
       <link
         rel="stylesheet"
         type="text/css"
@@ -61,7 +64,7 @@ const PortfolioDescription: React.FC = ({ project }) => {
             className="project-image"
           />
         </div>
-        <div className="text-section flex-1">
+        <div className="text-section flex-1 p-10">
           <h2 className="description-title">Project Description</h2>
           <p className="description-text">{project?.description}</p>
         </div>

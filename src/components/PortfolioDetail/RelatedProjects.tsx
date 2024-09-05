@@ -63,7 +63,7 @@ const RelatedProjects: React.FC<RelatedProjectsProps> = ({ currentProjectId }) =
   }, [currentProjectId]);
 
   return (
-    <section className="related-projects-container">
+    <section id="related-projects" className="related-projects-container">
       <h2 className="related-projects-title">Related Projects</h2>
       <div className="related-projects-grid">
         {relatedProjects.map((project) => (

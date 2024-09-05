@@ -4,9 +4,9 @@ import { team } from "../../utils/team.json";
 
 const MeetOurTeam: React.FC = () => {
   return (
-    <section className="team-container">
-      <h2 className="team-title">Meet Our Team</h2>
-      <div className="team-grid">
+    <section id="team" className="team-container">
+      <h1 className="team-title">Meet Our Team</h1>
+      <div className="team-grid mt-20">
       {team.map((member, index) => (
         <div key={index} className="team-member">
           <div className="team-image-wrapper">

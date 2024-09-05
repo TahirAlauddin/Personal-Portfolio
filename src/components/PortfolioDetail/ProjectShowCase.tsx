@@ -1,46 +1,13 @@
 import "./ProjectShowcase.css";
-import React from "react";
 
-interface ProjectItem {
-  type: "image" | "video" | "pdf" | "text";
-  src: string;
-  title: string;
-  description: string;
-}
 
-const project: ProjectItem[] = [
-  {
-    type: "image",
-    src: "/assets/img/Portfolio/Recipe/home.webp",
-    title: "Page 1",
-    description: "A brief description of Project 1.",
-  },
-  {
-    type: "video",
-    src: "/assets/img/Portfolio/Loote/Portfolio1.mp4",
-    title: "Page 2",
-    description: "A brief description of Project 2.",
-  },
-  {
-    type: "pdf",
-    src: "/assets/img/Portfolio/Loote/Loote2.pdf",
-    title: "Page 3",
-    description: "A brief description of Project 3.",
-  },
-  {
-    type: "text",
-    src: "",
-    title: "Page 4",
-    description: "A detailed description of Project 4, focusing on key features and outcomes.",
-  },
-  // Add more project items here
-];
-const title = 'title';
-const description = 'This is description';
+import { ProjectsInterface  } from '../../screens/interfaces'
 
-const ProjectShowcase: React.FC = ({project}) => {
+
+
+const ProjectShowcase = ({ project }: { project: ProjectsInterface }) => {
   return (
-    <section className="showcase-container">
+    <section id="project-showcase" className="showcase-container">
       <h2 className="showcase-title">Project Pages</h2>
       <div className="project-grid">
   {project.images.map((page, index) => {

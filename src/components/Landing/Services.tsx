@@ -5,7 +5,7 @@ import webAppLogo from "/assets/img/settings.png";
 
 const ServicesSection = () => {
   return (
-    <section className="services-section">
+    <section id="services" className="services-section">
       <h2 className="auto-show">What Services I'm Providing</h2>
       <p className="auto-show">
         Providing customized web development services.

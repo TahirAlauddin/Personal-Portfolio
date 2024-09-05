@@ -1,18 +1,28 @@
 import { useState } from "react";
-import myLogo from "../../public/assets/img/logo-removebg.png";
-import "./Navbar.css";
 
-const Navbar = () => {
+import "./Navbar.css";
+interface NavbarProps {
+  navigation: {
+    logo: string;
+    menuItems: {
+      label: string;
+      href: string;
+      id?: string;
+    }[];
+  };
+}
+
+const Navbar = ({ navigation }: NavbarProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const [selected, setSelected] = useState("home");
+  const [selected, setSelected] = useState(navigation.menuItems[0].href);
 
-  const handleMenuItemClick = (item: string) => {
-    setSelected(item);
+  const handleMenuItemClick = (item: { label: string; href: string; id?: string }) => {
+    setSelected(item.href);
     setMenuOpen(!menuOpen);
   };
 
@@ -20,47 +30,23 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="flex justify-between w-full px-0">
         <div className="logo">
-          <img src={myLogo} alt="Tech Hoseki" />
+          <img src={navigation.logo} alt="Tech Hoseki" />
         </div>
         <div
           className={`menu mt-[0] md:mt-0 pl-[23px] ${menuOpen ? "open" : ""}`}
         >
-          <a
-            href="/"
-            className={`w-full text-left menu-item ${
-              selected === "home" ? "selected" : ""
-            }`}
-            onClick={() => handleMenuItemClick("home")}
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className={`w-full text-left menu-item ${
-              selected === "about" ? "selected" : ""
-            }`}
-            onClick={() => handleMenuItemClick("about")}
-          >
-            About
-          </a>
-          <a
-            href="/portfolio/?id=1"
-            className={`w-full text-left menu-item ${
-              selected === "portfolio" ? "selected" : ""
-            }`}
-            onClick={() => handleMenuItemClick("portfolio")}
-          >
-            Portfolio
-          </a>
-          <a
-            href="#contact"
-            className={`w-full text-left menu-item ${
-              selected === "contact" ? "selected" : ""
-            }`}
-            onClick={() => handleMenuItemClick("contact")}
-          >
-            Contact
-          </a>
+          {navigation.menuItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              className={`w-full text-left menu-item ${
+                selected === item.href ? "selected" : ""
+              }`}
+              onClick={() => handleMenuItemClick(item)}
+            >
+              {item.label}
+            </a>
+          ))}
           <a href="https://wa.me/923233428060" className={`hire-me`}>
             Whatsapp
           </a>

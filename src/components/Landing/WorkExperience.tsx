@@ -5,7 +5,7 @@ import "./WorkExperience.css";
 
 function WorkExperience() {
   return (
-    <section className="work-experience-section">
+    <section id="experience" className="work-experience-section">
       <div className="work-experience-header">
         <h2 className="auto-show">Work Experience</h2>
         <div className="auto-show work-experience-p">

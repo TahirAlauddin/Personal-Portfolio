@@ -24,7 +24,7 @@ const Testimonial = () => {
   }, [position]);
 
   return (
-    <div className="testimonial-container">
+    <div id="testimonials" className="testimonial-container">
       <div className="testimonials-heading">
         <h2>What My Clients Say</h2>
       </div>

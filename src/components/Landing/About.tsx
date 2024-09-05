@@ -3,7 +3,7 @@ import aboutImage from "/assets/img/about.jpg";
 
 const About = () => {
   return (
-    <div className="about-parent">
+    <div id="about" className="about-parent">
       <div id="about" className="about-container">
         <h2 className="auto-show about-title">About Me</h2>
         <p className="auto-show about-subtitle">
