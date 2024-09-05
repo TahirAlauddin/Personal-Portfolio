@@ -1,13 +1,11 @@
 import React from 'react'
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import App from "./App.tsx";
-import "./index.css";
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import ErrorPage from "./error-page.tsx";
 import PortfolioPage from "./screens/portfolio.tsx";
-import { SinglePortFolio } from "./screens/portFolio.details.tsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -18,11 +16,8 @@ const router = createBrowserRouter([
   {
     path: "/portfolio",
     element: <PortfolioPage />,
-  },
-  {
-    path: "/portfolio/:id",
-    element: <SinglePortFolio />,
-  },
+    errorElement: <ErrorPage />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
