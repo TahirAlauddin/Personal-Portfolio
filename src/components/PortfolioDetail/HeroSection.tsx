@@ -1,25 +1,29 @@
-import projectCover from "/assets/img/Portfolio/PortfolioCover/MoopBot.webp";
 import "./HeroSection.css";
-import React from "react";
+import { ProjectsInterface } from '../../screens/interfaces'
 
-const PortfolioDetail: React.FC = () => {
-  return (
-    <section>
-      <div className="portfolio-container flex-row justify-center gap-40">
-        <div className="text-center mb-4">
-          <h1 className="portfolio-title">Web Development Project</h1>
-          <p className="portfolio-subtitle">
-            Creating Innovative and User-Friendly Websites
-          </p>
+
+const HeroSection = ({ project }: { project: ProjectsInterface }) => {
+  const { title, subtitle, tags, coverImage } = project;
+    return (
+    <section id="hero-section">
+      <div className="md:flex items-center  my-2 flex-row justify-center gap-20">
+        <div className="text-center mb-4 flex-1">
+          <h1 className="portfolio-title">{title}</h1>
+          <p className="portfolio-subtitle">{subtitle}</p>
           <div className="tech-stack">
-            <span className="tech-item">Python</span>
-            <span className="tech-item">Django</span>
-            <span className="tech-item">React</span>
+            {tags?.map((tag: string) => (
+              <span
+                key={tag}
+                className="background-primary m-3 rounded-[5px] py-1 text-[12px] min-w-[60px] text-white px-2"
+              >
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
-        <div className="image-wrapper">
+        <div className="image-wrapper flex-1">
           <img
-            src={projectCover}
+            src={coverImage}
             alt="Project Screenshot"
             className="project-cover"
           />
@@ -29,4 +33,4 @@ const PortfolioDetail: React.FC = () => {
   );
 };
 
-export default PortfolioDetail;
+export default HeroSection;

@@ -44,7 +44,7 @@ export default function Carousel() {
     if (!modalOpen) {
       setSelectedProject(id);
       setShowModal(true);
-      console.log('Image clicked:', id);
+      document.body.style.overflow = "hidden";
     }
   };
 
@@ -60,7 +60,7 @@ export default function Carousel() {
   const dragStart = (
     e: React.MouseEvent<HTMLImageElement> & React.TouchEvent<HTMLImageElement>
   ) => {
-    if (modalOpen || isMoving) return; 
+    if (modalOpen || isMoving) return;
 
     setIsDragStart(true);
     setPrevPageX(e.pageX || e.touches[0].pageX);
@@ -70,7 +70,7 @@ export default function Carousel() {
   const dragging = (
     e: React.MouseEvent<HTMLImageElement> & React.TouchEvent<HTMLImageElement>
   ) => {
-    if (!isDragStart || modalOpen || isMoving) return; 
+    if (!isDragStart || modalOpen || isMoving) return;
 
     setIsDragging(true);
 
@@ -108,14 +108,14 @@ export default function Carousel() {
     const absPositionDiff = Math.abs(positionDiff);
 
     const firstImageWidth =
-      carouselRef.current.firstElementChild?.clientWidth! + 14; 
+      carouselRef.current.firstElementChild?.clientWidth! + 14;
 
     let skip = 0;
-    let valDifference = firstImageWidth - absPositionDiff;
+    const valDifference = firstImageWidth - absPositionDiff;
 
     if (valDifference < 0) {
-      let absVal = Math.abs(valDifference);
-      let quotient = Math.floor(absVal / firstImageWidth) + 1;
+      const absVal = Math.abs(valDifference);
+      const quotient = Math.floor(absVal / firstImageWidth) + 1;
       skip = firstImageWidth * quotient;
     }
 
@@ -125,7 +125,7 @@ export default function Carousel() {
           absPositionDiff > firstImageWidth / 3
             ? carouselRef.current.scrollLeft + skip + valDifference
             : carouselRef.current.scrollLeft - absPositionDiff,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     } else {
       carouselRef.current.scrollTo({
@@ -133,7 +133,7 @@ export default function Carousel() {
           absPositionDiff > firstImageWidth / 3
             ? carouselRef.current.scrollLeft - skip - valDifference
             : carouselRef.current.scrollLeft + absPositionDiff,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
 
@@ -148,15 +148,15 @@ export default function Carousel() {
     const firstImageWidth =
       carouselRef.current.firstElementChild?.clientWidth! + 14;
 
-    if (e.currentTarget.id === 'btn-left') {
+    if (e.currentTarget.id === "btn-left") {
       carouselRef.current.scrollTo({
         left: carouselRef.current.scrollLeft - firstImageWidth,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
-    } else if (e.currentTarget.id === 'btn-right') {
+    } else if (e.currentTarget.id === "btn-right") {
       carouselRef.current.scrollTo({
         left: carouselRef.current.scrollLeft + firstImageWidth,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -164,13 +164,13 @@ export default function Carousel() {
   const handleWheelScroll = (e: React.WheelEvent<HTMLDivElement>) => {
     if (!carouselRef.current) return;
 
-    e.preventDefault(); 
+    e.preventDefault();
 
     const scrollAmount = e.deltaY;
 
     carouselRef.current.scrollTo({
       left: carouselRef.current.scrollLeft + scrollAmount,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -216,18 +216,21 @@ export default function Carousel() {
               id="btn-left"
               onClick={handleButtonClick}
             >
-              <img src={prev} style={{ height: "3rem", width: "auto" }} alt="Previous" />
+              <img
+                src={prev}
+                style={{ height: "3rem", width: "auto" }}
+                alt="Previous"
+              />
             </button>
 
             <div
-              className={`carousel-container ${isDragging ? 'dragging' : ''}`}
+              className={`carousel-container ${isDragging ? "dragging" : ""}`}
               ref={carouselRef}
               onMouseDown={dragStart}
               onMouseMove={dragging}
               onMouseLeave={dragEnd}
               onMouseUp={dragEnd}
             >
-             
               {IMAGE_URLS.map((image, index) => (
                 <img
                   key={image.id}
@@ -236,10 +239,9 @@ export default function Carousel() {
                   className="carousel-image"
                   draggable={false}
                   onClick={() => handleImageClick(image.id)}
-                  style={{ cursor: 'grab',width: '562px', height: '238px' }}
+                  style={{ cursor: "grab", width: "562px", height: "238px" }}
                 />
               ))}
-              
             </div>
 
             <button
@@ -248,13 +250,22 @@ export default function Carousel() {
               id="btn-right"
               onClick={handleButtonClick}
             >
-              <img src={next} style={{ height: "3rem", width: "auto" }} alt="Next" />
+              <img
+                src={next}
+                style={{ height: "3rem", width: "auto" }}
+                alt="Next"
+              />
             </button>
           </div>
         </div>
 
         {showModal && (
-          <Modal onClose={() => setShowModal(false)}>
+          <Modal
+            onClose={() => {
+              setShowModal(false);
+              document.body.style.overflow = "inherit";
+            }}
+          >
             <ImageGallery projectId={selectedProject} />
           </Modal>
         )}

@@ -1,58 +1,26 @@
 import "./MeetOurTeam.css";
 import React from "react";
+import { team } from "../../utils/team.json";
 
 const MeetOurTeam: React.FC = () => {
   return (
-    <section className="team-container">
-      <h2 className="team-title">Meet Our Team</h2>
-      <div className="team-grid">
-        {/* Repeat this div for each team member */}
-        <div className="team-member">
+    <section id="team" className="team-container">
+      <h1 className="team-title">Meet Our Team</h1>
+      <div className="team-grid mt-20">
+      {team.map((member, index) => (
+        <div key={index} className="team-member">
           <div className="team-image-wrapper">
-          <img
-            src="/assets/img/tahir/Tahir with shadow.webp"
-            alt="Team Member 1"
-            className="team-image"
-          />
+            <img
+              src={`/assets/img/${member.picture}`}
+              alt={`${member.name}`}
+              className="team-image"
+            />
           </div>
-          <p className="team-name">John Doe</p>
-          <p className="team-role">Web Developer</p>
+          <p className="team-name">{member.name}</p>
+          <p className="team-role">{member.role}</p>
         </div>
-        <div className="team-member">
-          <div className="team-image-wrapper">
-          <img
-            src="/assets/img/tahir/Tahir with shadow.webp"
-            alt="Team Member 1"
-            className="team-image"
-          />
-          </div>
-          <p className="team-name">John Doe</p>
-          <p className="team-role">Web Developer</p>
-        </div>
-        <div className="team-member">
-          <div className="team-image-wrapper">
-          <img
-            src="/assets/img/tahir/Tahir with shadow.webp"
-            alt="Team Member 1"
-            className="team-image"
-          />
-          </div>
-          <p className="team-name">John Doe</p>
-          <p className="team-role">Web Developer</p>
-        </div>
-        <div className="team-member">
-          <div className="team-image-wrapper">
-          <img
-            src="/assets/img/tahir/Tahir with shadow.webp"
-            alt="Team Member 1"
-            className="team-image"
-          />
-          </div>
-          <p className="team-name">John Doe</p>
-          <p className="team-role">Web Developer</p>
-        </div>
-                {/* Add more team members as needed */}
-      </div>
+      ))}
+            </div>
     </section>
   );
 };

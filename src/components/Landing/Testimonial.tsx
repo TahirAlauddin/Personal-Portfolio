@@ -24,7 +24,7 @@ const Testimonial = () => {
   }, [position]);
 
   return (
-    <div className="testimonial-container">
+    <div id="testimonials" className="testimonial-container">
       <div className="testimonials-heading">
         <h2>What My Clients Say</h2>
       </div>
@@ -48,14 +48,14 @@ const Testimonial = () => {
           {Testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="item"
+              className="item testemonial-item"
               style={
                 {
                   "--offset": (index + 1).toString(),
                 } as React.CSSProperties
               }
             >
-              <img src={testimonial.imgSrc} alt="Client Image" />
+              <img src={testimonial.imgSrc} alt={testimonial.clientName} />
               <h3 className="client-name">{testimonial.clientName}</h3>
               <p className="client-country">{testimonial.clientLocation}</p>
               <p className="testimonial">{testimonial.comment}</p>

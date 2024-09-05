@@ -92,17 +92,16 @@
   position: relative;
   background-color: white;
   padding: 20px;
-  width: 80%;
-  max-width: 1000px;
-  display: flex;
+  width: 90%;
+   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .modal-close-button {
   position: absolute;
-  top: 63px;
-  right: 204px;
+  top: 0;
+  right: 0;
   background: none;
   border: none;
   cursor: pointer;

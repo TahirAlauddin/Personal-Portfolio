@@ -1,6 +1,4 @@
-.image-gallery-parent {
-  min-width: 100vw;
-}
+
 
 .image-gallery {
   display: flex;
@@ -11,9 +9,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
   max-height: min-content;
-  margin: 40px auto;
 }
 
 
@@ -50,12 +46,14 @@
   color: #333;
   font-size: 24px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .project-details p {
   color: #777;
   font-size: 16px;
   margin: 0;
+  text-align: left;
 }
 
 .large-image {
@@ -84,32 +82,28 @@
 }
 
 .small-images-container {
-  overflow-x: auto;
-  overflow-y: hidden;
-  display: flex;
   width: 100%;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 20px;
 }
 
-.small-images {
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  flex-wrap: nowrap;
-}
+
 
 .small-images img {
-  width: 120px;
-  height: 70px;
+  width: 100%;
   cursor: pointer;
   border: 3px solid #ccc;
   border-radius: 10px;
   transition: transform 0.3s ease, border-color 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding: 12px;
 }
 
 .small-images img:hover {
-  transform: scale(1.05);
   border-color: #555;
 }
 
@@ -117,7 +111,10 @@
   .large-image img {
     max-width: 100%;
   }
-
+  .small-images{
+    display: flex;
+    overflow-x: auto;
+  }
   .small-images img {
     width: 120px;
     height: 80px;

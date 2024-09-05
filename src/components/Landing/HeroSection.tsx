@@ -12,7 +12,7 @@ function HeroSection() {
   return (
     <div className="landing-parent">
       <div className="landing-container gap-10 pb-0 ml-0">
-        <div className="content">
+        <div className="content flex-1">
           <h1 className="heading text-3xl m-0 text-left">
             Hey There{" "}
             <div className="wave" role="img" aria-label="wave">
@@ -26,8 +26,16 @@ function HeroSection() {
             Building software for startups that scales with their businesses.
             Your next Big-Tech company.
           </p>
-          <a href="#" onClick={() => { Calendly.initPopupWidget({ url: 'https://calendly.com/tahiralauddin7/30min' }); return false; }}>
-          <button className="contact-btn">Book a Call</button>
+          <a
+            href="#"
+            onClick={() => {
+              Calendly.initPopupWidget({
+                url: "https://calendly.com/tahiralauddin7/30min",
+              });
+              return false;
+            }}
+          >
+            <button className="contact-btn">Book a Call</button>
           </a>
           <div className="social-icons">
             <a href="https://facebook.com/techhoseki">
@@ -38,8 +46,8 @@ function HeroSection() {
             </a>
           </div>
         </div>
-        <div className="image-container">
-          <div className="image-wrapper">
+        <div className="bg-white image-container flex-1">
+          <div className="bg-white image-wrapper">
             <div className="profile-image-bg"></div>
             <img
               srcSet={`${profileImageS} 600w, ${profileImageM} 1200w, ${profileImage} 2000w`}

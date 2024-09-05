@@ -23,8 +23,8 @@ const Newsletter: React.FC = () => {
       </button>
 
       {isOpen && (
-        <div className="modal-overlay">
-          <div className="modal-content">
+        <div className="modal-overlay ">
+          <div className="modal-content bg-white">
             <button className="close-btn" onClick={toggleModal}>
               &times;
             </button>

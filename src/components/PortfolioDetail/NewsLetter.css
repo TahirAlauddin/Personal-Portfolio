@@ -1,5 +1,6 @@
+
 .newsletter-btn {
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   color: var(--white);
   padding: 0.8rem 2rem;
   font-size: 1.6rem;
@@ -10,7 +11,7 @@
 }
 
 .newsletter-btn:hover {
-  background-color: #5544cc;
+  background-color: #e04355;
 }
 
 .modal-overlay {
@@ -31,7 +32,6 @@
   padding: 2rem;
   border-radius: 0.8rem;
   width: 90%;
-  max-width: 500px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
   text-align: center;
   position: relative;
@@ -75,7 +75,7 @@
 }
 
 .subscribe-btn {
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   color: var(--white);
   padding: 1rem;
   font-size: 1.6rem;
@@ -86,5 +86,5 @@
 }
 
 .subscribe-btn:hover {
-  background-color: #5544cc;
+  background-color: #e04355;
 }
