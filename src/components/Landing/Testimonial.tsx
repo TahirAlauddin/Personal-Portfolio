@@ -63,6 +63,13 @@ const Testimonial = () => {
           ))}
         </main>
       </div>
+      <div className="mt-5 mb-[150px]">
+        <video
+          width="100%"
+          controls
+          src="https://videos.pexels.com/video-files/2516848/2516848-sd_640_360_25fps.mp4"
+        ></video>
+      </div>
     </div>
   );
 };

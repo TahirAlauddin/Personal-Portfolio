@@ -75,7 +75,7 @@ const PortfolioDescription = ({ project }: { project: ProjectsInterface }) => {
           data-reverse="true"
           style={
             {
-              "--width": "200px",
+              "--width": "130px",
               "--height": "50px",
               "--quantity": 39,
             } as React.CSSProperties
