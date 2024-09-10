@@ -28,7 +28,16 @@ const Testimonial = () => {
       <div className="testimonials-heading">
         <h2>What My Clients Say</h2>
       </div>
-      <div className="carousel-container-testimonial">
+      <div className="mt-5 mb-[20px] flex justify-center">
+        <video 
+          controlsList="nodownload"
+          className="rounded-xl w-2/4"
+          width="100%"
+          controls
+          src="/assets/video/testimonial.mp4"
+        ></video>
+      </div>
+      <div className="carousel-container-testimonial mb-[120px]">
         {[...Array(maxPosition).keys()].map((i) => {
           const nthplace = i + 1;
           return (
@@ -62,13 +71,6 @@ const Testimonial = () => {
             </div>
           ))}
         </main>
-      </div>
-      <div className="mt-5 mb-[150px]">
-        <video
-          width="100%"
-          controls
-          src="https://videos.pexels.com/video-files/2516848/2516848-sd_640_360_25fps.mp4"
-        ></video>
       </div>
     </div>
   );

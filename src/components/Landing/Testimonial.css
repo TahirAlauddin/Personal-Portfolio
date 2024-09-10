@@ -3,6 +3,11 @@
   --total: 8;
 }
 
+.testimonials-heading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 .carousel-container-testimonial {
   width: 100%;
   height: 470px;
