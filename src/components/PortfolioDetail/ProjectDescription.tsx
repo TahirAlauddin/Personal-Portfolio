@@ -1,4 +1,3 @@
-import React from "react";
 import projectCover from "/assets/img/Portfolio/PortfolioCover/MoopBot.webp";
 import "./ProjectDescription.css";
 import { ProjectsInterface } from '../../screens/interfaces'
