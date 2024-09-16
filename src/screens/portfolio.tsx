@@ -4,7 +4,7 @@ import HeroSection from '../components/PortfolioDetail/HeroSection'
 
 import PortfolioDescription from '../components/PortfolioDetail/ProjectDescription'
 import ProjectShowcase from '../components/PortfolioDetail/ProjectShowCase'
-import MeetOurTeam from '../components/PortfolioDetail/MeetOurTeam'
+// import MeetOurTeam from '../components/PortfolioDetail/MeetOurTeam'
 import Newsletter from '../components/PortfolioDetail/NewsLetter'
 import RelatedProjects from '../components/PortfolioDetail/RelatedProjects'
 import { useSearchParams } from "react-router-dom";
@@ -44,7 +44,7 @@ function PortfolioPage() {
           <HeroSection project={project}></HeroSection>
           <PortfolioDescription project={project}></PortfolioDescription>
           <ProjectShowcase project={project}></ProjectShowcase>
-          <MeetOurTeam></MeetOurTeam>
+          {/* <MeetOurTeam></MeetOurTeam> */}
           <RelatedProjects currentProjectId={project.id}></RelatedProjects>
           <Newsletter></Newsletter>
         </article>

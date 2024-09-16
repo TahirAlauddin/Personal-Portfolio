@@ -53,7 +53,7 @@ const Testimonial = () => {
             />
           );
         })}
-        <main id="carousel">
+        <div id="carousel">
           {Testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -70,7 +70,7 @@ const Testimonial = () => {
               <p className="testimonial">{testimonial.comment}</p>
             </div>
           ))}
-        </main>
+        </div>
       </div>
     </div>
   );

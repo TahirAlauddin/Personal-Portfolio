@@ -42,12 +42,16 @@
   height: 300px;
   display: flex;
   align-items: center;
+  text-align: justify;
   justify-content: center;
   overflow: hidden;
   transform-style: preserve-3d;
   perspective: 600px;
   pointer-events: none;
   position: relative;
+
+  font-family: "Lexend";
+
 }
 
 .item {
