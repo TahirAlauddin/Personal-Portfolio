@@ -210,26 +210,36 @@ const ImageGallery = ({ projectId }) => {
 
   let portfoliosection = document.getElementById("portfolio");
   portfoliosection.style.backgroundColor = "#cbcbcb";
-
   return (
     <div className="image-gallery-parent">
       <div className="image-gallery">
         <div className="sm:flex">
-          {/* <div className="large-image">
-            <img src={largeImage || project.images[0]} alt="Large" />
-          </div> */}
-          <div className="basis-1/2 project-details">
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
+          <div className="basis-1/2 project-details flex flex-col">
+            <div>
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
+            </div>
+            <div className="mt-auto">
             <Link
-              to={`/portfolio/?id=${project?.id}`}
-              className="text-left block"
-              onClick={() => (document.body.style.overflow = "inherit")}
-            >
-              Learn More
-            </Link>
+                to={`/portfolio/?id=${project?.id}`}
+                className="
+                  bg-[var(--primary-color)] 
+                  text-white 
+                  px-2 py-2
+                  no-underline 
+                  rounded 
+                  w-32
+                  text-xl
+                  inline-block
+                  hover:bg-opacity-80
+                "
+                onClick={() => (document.body.style.overflow = "inherit")}
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
-          <div className="basis-1/1 small-images-container">
+          <div className="basis-1/2 small-images-container">
             <div className="small-images">
               {project.images.map((image, index) => (
                 <img
