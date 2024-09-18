@@ -166,7 +166,7 @@
         "id": 9,
         "title": "Moop Bot",
         "subtitle": "A personalized AI Powered Assistant like Siri",
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/MoopBot.webp",
         "tags": ["Chatbot", "PyQt", "Python", "ElevenLabs", "OpenAI API"],
         "description": "Moop Bot is an AI powered assistant designed to respond to queries and assist the user. It is integrated with ElevenLabs TTS API and OpenAI GPT-3.5-turbo.",
         "images": [
@@ -179,7 +179,7 @@
         "title": "Instagnite",
         "subtitle": "Instagram Tools at one place",
         "tags": ["Chatbot", "PyQt", "Python"],
-        "coverImage": "/assets/img/Portfolio/PortfolioCover/KonnectedReverseRaffle.webp",
+        "coverImage": "/assets/img/Portfolio/PortfolioCover/Instagnite.webp",
         "description": "Instangite is a dynamic desktop application crafted using Python and PyQt5, designed specifically for efficient data scraping and automated interactions on Instagram. This versatile tool expertly navigates through Instagram's platform, extracting valuable data with precision, while also functioning as an intelligent bot for seamless user engagement.",
         "images": [
           "/assets/img/Portfolio/Instagnite/account-details.webp",
