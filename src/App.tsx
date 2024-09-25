@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import LandingPage from "./screens/landing";
 
-function App() {
+function App() {  
   return <LandingPage />;
 }
 
