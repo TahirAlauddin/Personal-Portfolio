@@ -1,4 +1,4 @@
-import Newslider from '../components/Landing/Newslider.tsx'
+import Portfolio from '../components/Landing/Portfolio.tsx'
 import HeroSection from '../components/Landing/HeroSection.tsx'
 import Navbar from '../components/Navbar.tsx'
 import About from '../components/Landing/About.tsx'
@@ -33,7 +33,7 @@ function LandingPage() {
             <Services />
             <About />
             <WorkExperience />
-            <Newslider />
+            <Portfolio />
             <Testimonial />
           </article>
         </main>
